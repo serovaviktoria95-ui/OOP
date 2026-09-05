@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cff061d1-b627-4a61-9265-f7b1d4543fbc" name="Changes" comment="" />
+    <list default="true" id="cff061d1-b627-4a61-9265-f7b1d4543fbc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,9 +29,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="3IuC48CGRLINloGfjqDFGQTxS2O" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -50,6 +53,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "task-1-1",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Виктория/tmp/OOP/Task_1_1_1",
     "onboarding.tips.debug.path": "C:/Users/Виктория/tmp/OOP/Task_1_1_1/src/main/java/ru/nsu/vserova/Task_1_1_1/Main.java",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
