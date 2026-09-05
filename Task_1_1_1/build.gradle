@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'jacoco'
+    id 'checkstyle'
 }
 
 group = 'ru.nsu.vserova.Task_1_1_1'
@@ -20,7 +21,10 @@ test {
     useJUnitPlatform()
 }
 jacocoTestReport {
+    dependsOn test
     reports {
-        xml.required = true
+        xml.required = false
+        csv.required = false
+        html.required = true
     }
 }

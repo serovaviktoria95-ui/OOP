@@ -8,7 +8,7 @@ public class HeapSort {
         if (left < n && array[left] > array[l]) {
             l = left;
         }
-        if ( right < n && array[right] > array[l] ) {
+        if (right < n && array[right] > array[l]) {
             l = right;
         }
         if (l != i) {
@@ -18,6 +18,7 @@ public class HeapSort {
             siftDown(array, n, l);
         }
     }
+
     public static int[] sort(int[] array) {
         if (array == null) {
             return null;
