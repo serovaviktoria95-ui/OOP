@@ -5,7 +5,7 @@ public class HeapSort {
         int l = i;
         int left = i * 2 + 1;
         int right = i * 2 + 2;
-        if ( left < n && array[left] > array[l] ) {
+        if (left < n && array[left] > array[l]) {
             l = left;
         }
         if ( right < n && array[right] > array[l] ) {
@@ -24,7 +24,7 @@ public class HeapSort {
         }
         int[] res = array;
         int len = array.length;
-        for ( int i = len / 2 - 1; i >= 0; i--) {
+        for (int i = len / 2 - 1; i >= 0; i--) {
             siftDown( res, len, i );
         }
         for (int i = len - 1; i > 0; i--) {
