@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cff061d1-b627-4a61-9265-f7b1d4543fbc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/vserova/Task_1_1_1/HeapSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/Task_1_1_1/SecondTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/Task_1_1_1/second.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/vserova/Task_1_1_1/Sort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/Task_1_1_1/SortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/Task_1_1_1/SortTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="cff061d1-b627-4a61-9265-f7b1d4543fbc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

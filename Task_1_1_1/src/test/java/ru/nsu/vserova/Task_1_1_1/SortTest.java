@@ -27,7 +27,7 @@ class SortTest {
     void fourth(){
         int[] array = new int[]{-3, -3, -2};
         var result = HeapSort.sort(array);
-        assertArrayEquals(new int[]{-2, -3, -3}, result);
+        assertArrayEquals(new int[]{-3, -3, -2}, result);
     }
     @Test
     void fifth(){
