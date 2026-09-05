@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"ru.nsu.vserova.Task_1_1_1","l":"HeapSort"},{"p":"ru.nsu.shadrina","l":"Sample"}];updateSearchResults();
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"ru.nsu.vserova.task_1_1_1","l":"HeapSort"},{"p":"ru.nsu.shadrina","l":"Sample"}];updateSearchResults();
