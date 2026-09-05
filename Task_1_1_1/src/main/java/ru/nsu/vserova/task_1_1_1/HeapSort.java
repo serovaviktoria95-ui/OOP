@@ -23,10 +23,10 @@ public class HeapSort {
         if (array == null) {
             return null;
         }
-        int[] res = array;
+        int[] res = array.clone();
         int len = array.length;
         for (int i = len / 2 - 1; i >= 0; i--) {
-            siftDown( res, len, i );
+            siftDown(res, len, i);
         }
         for (int i = len - 1; i > 0; i--) {
             int t = res[0];

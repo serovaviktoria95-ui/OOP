@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cff061d1-b627-4a61-9265-f7b1d4543fbc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/task_1_1_1/SortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/task_1_1_1/HeapSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/vserova/task_1_1_1/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/vserova/task_1_1_1/HeapSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/vserova/task_1_1_1/HeapSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/vserova/task_1_1_1/HeapSortTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +74,7 @@
       <recent name="ru.nsu.vserova.Task_1_1_1" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SortTest.sixth">
+  <component name="RunManager" selected="JUnit.SortTest.first">
     <configuration name="SortTest.fifth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Task_1_1_1.test" />
       <extension name="coverage">
@@ -167,10 +168,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SortTest.first" />
         <item itemvalue="JUnit.SortTest.sixth" />
         <item itemvalue="JUnit.SortTest.fifth" />
         <item itemvalue="JUnit.SortTest.second" />
-        <item itemvalue="JUnit.SortTest.first" />
         <item itemvalue="JUnit.SortTest.sort" />
       </list>
     </recent_temporary>
