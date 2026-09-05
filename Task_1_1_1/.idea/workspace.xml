@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cff061d1-b627-4a61-9265-f7b1d4543fbc" name="Changes" comment="" />
+    <list default="true" id="cff061d1-b627-4a61-9265-f7b1d4543fbc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/vserova/Task_1_1_1/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/vserova/Task_1_1_1/HeapSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/Task_1_1_1/SortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/Task_1_1_1/SortTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,12 +78,12 @@
       <module name="Task_1_1_1.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.nsu.vserova.Task_1_1_1.*" />
+          <option name="PATTERN" value="ru.nsu.vserova.task_1_1_1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.nsu.vserova.Task_1_1_1" />
-      <option name="MAIN_CLASS_NAME" value="ru.nsu.vserova.Task_1_1_1.SortTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.nsu.vserova.task_1_1_1.SortTest" />
       <option name="METHOD_NAME" value="fifth" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -90,12 +94,12 @@
       <module name="Task_1_1_1.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.nsu.vserova.Task_1_1_1.*" />
+          <option name="PATTERN" value="ru.nsu.vserova.task_1_1_1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.nsu.vserova.Task_1_1_1" />
-      <option name="MAIN_CLASS_NAME" value="ru.nsu.vserova.Task_1_1_1.SortTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.nsu.vserova.task_1_1_1.SortTest" />
       <option name="METHOD_NAME" value="first" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -106,12 +110,12 @@
       <module name="Task_1_1_1.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.nsu.vserova.Task_1_1_1.*" />
+          <option name="PATTERN" value="ru.nsu.vserova.task_1_1_1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.nsu.vserova.Task_1_1_1" />
-      <option name="MAIN_CLASS_NAME" value="ru.nsu.vserova.Task_1_1_1.SortTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.nsu.vserova.task_1_1_1.SortTest" />
       <option name="METHOD_NAME" value="second" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -122,12 +126,12 @@
       <module name="Task_1_1_1.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.nsu.vserova.Task_1_1_1.*" />
+          <option name="PATTERN" value="ru.nsu.vserova.task_1_1_1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.nsu.vserova.Task_1_1_1" />
-      <option name="MAIN_CLASS_NAME" value="ru.nsu.vserova.Task_1_1_1.SortTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.nsu.vserova.task_1_1_1.SortTest" />
       <option name="METHOD_NAME" value="sixth" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -138,17 +142,28 @@
       <module name="Task_1_1_1.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.nsu.vserova.Task_1_1_1.*" />
+          <option name="PATTERN" value="ru.nsu.vserova.task_1_1_1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.nsu.vserova.Task_1_1_1" />
-      <option name="MAIN_CLASS_NAME" value="ru.nsu.vserova.Task_1_1_1.SortTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.nsu.vserova.task_1_1_1.SortTest" />
       <option name="METHOD_NAME" value="sort" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="task_1_1_1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="task_1_1_1" />
+      <option name="filePath" />
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>

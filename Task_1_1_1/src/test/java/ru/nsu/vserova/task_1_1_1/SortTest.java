@@ -1,4 +1,4 @@
-package ru.nsu.vserova.Task_1_1_1;
+package ru.nsu.vserova.task_1_1_1;
 
 import org.junit.jupiter.api.Test;
 
@@ -18,25 +18,25 @@ class SortTest {
         assertArrayEquals(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9}, result);
     }
     @Test
-    void third(){
+    void third() {
         int[] array = new int[]{3, 3, 2};
         var result = HeapSort.sort(array);
         assertArrayEquals(new int[]{2, 3, 3}, result);
     }
     @Test
-    void fourth(){
+    void fourth() {
         int[] array = new int[]{-3, -3, -2};
         var result = HeapSort.sort(array);
         assertArrayEquals(new int[]{-3, -3, -2}, result);
     }
     @Test
-    void fifth(){
+    void fifth() {
         int[] array = new int[]{};
         var result = HeapSort.sort(array);
         assertArrayEquals(new int[]{}, result);
     }
     @Test
-    void sixth(){
+    void sixth() {
         int[] array = new int[]{0};
         var result = HeapSort.sort(array);
         assertArrayEquals(new int[]{0}, result);
