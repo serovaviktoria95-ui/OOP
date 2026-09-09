@@ -1,9 +1,11 @@
 package ru.nsu.vserova.Task_1_1_1;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
+/**
+ * Тесты для класса Sort.
+ */
 class SortTest {
 
     @Test
