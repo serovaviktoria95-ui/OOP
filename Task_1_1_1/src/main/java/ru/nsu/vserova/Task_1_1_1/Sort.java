@@ -1,11 +1,15 @@
 package ru.nsu.vserova.Task_1_1_1;
 /**
- * Сортирует массив по возрастанию с использованием пирамидальной сортировки.
- *
- * @param array массив для сортировки
- * @return отсортированный массив (копия)
+ * Класс реализует алгоритм пирамидальной сортировки
+ * Сортирует массив целых чисел по возрастанию
  */
 public class Sort {
+    /**
+     * Восстанавливает свойство кучи для поддерева
+     * @param array массив
+     * @param n размер кучи
+     * @param i индекс корня поддерева
+     */
     public static  void siftDown(int[] array, int n, int i) {
         int l = i;
         int left = i * 2 + 1;
@@ -24,6 +28,11 @@ public class Sort {
         }
     }
 
+    /**
+     * Сортирует массив по возрастанию
+     * @param array массив для сортировки
+     * @return отсортированная копия исходного массива
+     */
     public static int[] sort(int[] array) {
         if (array == null) {
             return null;
