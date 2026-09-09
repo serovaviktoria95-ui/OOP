@@ -10,6 +10,7 @@ public class Sort {
      * @param n размер кучи
      * @param i индекс корня поддерева
      */
+    
     private static  void siftDown(int[] array, int n, int i) {
         int l = i;
         int left = i * 2 + 1;
