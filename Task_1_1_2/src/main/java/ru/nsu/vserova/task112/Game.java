@@ -34,7 +34,7 @@ public class Game {
     public void play() {
         System.out.println("Добро пожаловать в Блэкджек!");
 
-        while(true) {
+        while (true) {
             newRound();
 
             if (!again()) {
@@ -66,17 +66,17 @@ public class Game {
 
         printHands(true);
 
-        if (gamer.getHand().blackJack()){
+        if (gamer.getHand().blackJack()) {
             gamerBlackjack();
             return;
-        } else if (dealer.getHand().blackJack()){
+        } else if (dealer.getHand().blackJack()) {
             dealerBlackjack();
             return;
         }
 
         gamerTurn();
 
-        if(gamer.getHand().tooMuch()){
+        if (gamer.getHand().tooMuch()) {
             System.out.println("Перебор! Дилер выиграл раунд.");
             dealerWins++;
             printScore();
@@ -86,10 +86,11 @@ public class Game {
         dealerTurn();
         winner();
     }
+
     /**
      * Ход дилера.
      */
-    public void dealerTurn(){
+    public void dealerTurn() {
         System.out.println("Ход дилера");
         System.out.println("-------");
 
@@ -108,14 +109,14 @@ public class Game {
     /**
      * Ход пользователя.
      */
-    private void gamerTurn(){
+    private void gamerTurn() {
         System.out.println("Ваш ход");
         System.out.println("-------");
 
-        while(true) {
+        while (true) {
             int choice = gamerChoice();
 
-            if(choice == 0) {
+            if (choice == 0) {
                 return;
             }
 

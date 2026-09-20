@@ -30,7 +30,8 @@ public class Hand {
      * @return сумма очков
      */
     public int score() {
-        int sum = 0, acesCnt = 0;
+        int sum = 0;
+        int acesCnt = 0;
         for (Card c : cards) {
             if (c.getRank() == Rank.Ace) {
                 acesCnt++;

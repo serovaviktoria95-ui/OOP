@@ -14,7 +14,7 @@ public class Sort {
      * @param i индекс корня поддерева
      */
 
-    private static  void siftDown(int[] array, int n, int i) {
+    private static void siftDown(int[] array, int n, int i) {
         int l = i;
         int left = i * 2 + 1;
         int right = i * 2 + 2;
