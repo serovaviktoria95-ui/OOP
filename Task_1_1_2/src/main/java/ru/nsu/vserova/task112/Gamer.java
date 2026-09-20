@@ -1,14 +1,31 @@
 package ru.nsu.vserova.task112;
 
+/**
+ * Пользователь.
+*/
 public class Gamer {
-    protected Hand hand = new Hand();
-    private String playerName;
 
+    /** Рука игрока. */
+    protected Hand hand = new Hand();
+
+    /** Имя игрока. */
+    private String gamerName;
+
+    /**
+     * Возвращает руку игрока.
+     *
+     * @return рука
+     */
     public Hand getHand() {
         return hand;
     }
 
+    /**
+     * Возвращает имя игрока.
+     *
+     * @return имя
+     */
     public String getName() {
-        return playerName;
+        return gamerName;
     }
 }
