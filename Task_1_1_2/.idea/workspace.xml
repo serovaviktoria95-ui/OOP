@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57f6e4f8-c9d4-424a-9c85-f79e6666dc38" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/task112/CardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/task112/CardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/task112/DealerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/task112/DealerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/task112/DeckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/task112/DeckTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/task112/GamerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/task112/GamerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/task112/HandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/task112/HandTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/task112/RankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/task112/RankTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/task112/SuitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/task112/SuitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/task112/GameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -53,6 +48,7 @@
     "JUnit.GameTest.executor": "Run",
     "JUnit.GamerTest.executor": "Run",
     "JUnit.HandTest.executor": "Run",
+    "JUnit.MainTest.executor": "Debug",
     "JUnit.RankTest.executor": "Coverage",
     "JUnit.SuitTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -81,33 +77,21 @@
       <recent name="ru.nsu.vserova.Task_1_1_2" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GameTest">
-    <configuration name="SuitTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.nsu.vserova.Task_1_1_2.SuitTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <GradleProfilingDisabled>false</GradleProfilingDisabled>
-      <GradleCoverageDisabled>false</GradleCoverageDisabled>
-      <method v="2" />
+  <component name="RunManager" selected="JUnit.CardTest">
+    <configuration name="CardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Task_1_1_2.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.nsu.vserova.task112.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.nsu.vserova.task112" />
+      <option name="MAIN_CLASS_NAME" value="ru.nsu.vserova.task112.CardTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="DealerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Task_1_1_2.test" />
@@ -154,7 +138,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Task_1_1_2.test" />
       <extension name="coverage">
         <pattern>
@@ -163,7 +147,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.nsu.vserova.task112" />
-      <option name="MAIN_CLASS_NAME" value="ru.nsu.vserova.task112.HandTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.nsu.vserova.task112.MainTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -171,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CardTest" />
+        <item itemvalue="JUnit.MainTest" />
         <item itemvalue="JUnit.GameTest" />
         <item itemvalue="JUnit.DealerTest" />
         <item itemvalue="JUnit.GamerTest" />
-        <item itemvalue="JUnit.HandTest" />
-        <item itemvalue="Gradle.SuitTest" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +203,7 @@
     <SUITE FILE_PATH="coverage/Task_1_1_2$SuitTest.ic" NAME="SuitTest Coverage Results" MODIFIED="1789891297408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.nsu.vserova.Task_1_1_2.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Task_1_1_2$GameTest.ic" NAME="GameTest Coverage Results" MODIFIED="1789901221090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+    <SUITE FILE_PATH="coverage/Task_1_1_2$GameTest.ic" NAME="GameTest Coverage Results" MODIFIED="1789921635456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.nsu.vserova.task112.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Task_1_1_2$DealerTest.ic" NAME="DealerTest Coverage Results" MODIFIED="1789895479873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
@@ -228,14 +212,17 @@
     <SUITE FILE_PATH="coverage/Task_1_1_2$DeckTest.ic" NAME="DeckTest Coverage Results" MODIFIED="1789892631250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.nsu.vserova.Task_1_1_2.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/Task_1_1_2$MainTest.ic" NAME="MainTest Coverage Results" MODIFIED="1789921713014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ru.nsu.vserova.task112.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/Task_1_1_2$HandTest.ic" NAME="HandTest Coverage Results" MODIFIED="1789894833625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.nsu.vserova.task112.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Task_1_1_2$GamerTest.ic" NAME="GamerTest Coverage Results" MODIFIED="1789895188922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.nsu.vserova.task112.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Task_1_1_2$CardTest.ic" NAME="CardTest Coverage Results" MODIFIED="1789892402669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>ru.nsu.vserova.Task_1_1_2.*</FILTER>
+    <SUITE FILE_PATH="coverage/Task_1_1_2$CardTest.ic" NAME="CardTest Coverage Results" MODIFIED="1789921916224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ru.nsu.vserova.task112.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Task_1_1_2$RankTest.ic" NAME="RankTest Coverage Results" MODIFIED="1789891281234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.nsu.vserova.Task_1_1_2.*</FILTER>
