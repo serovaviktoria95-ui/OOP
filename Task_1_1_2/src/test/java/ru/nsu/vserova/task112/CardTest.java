@@ -46,6 +46,4 @@ class CardTest {
         Card card = new Card(Suit.Spades, Rank.Queen);
         assertEquals(Rank.Queen, card.getRank());
     }
-
-
 }

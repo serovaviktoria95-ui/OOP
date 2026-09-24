@@ -14,22 +14,30 @@ public class Hand {
 
     /** Карты в руке. */
     private List<Card> cards = new ArrayList<>();
+    private int score = 0;
 
     /**
-     * Возвращает список карт в руке.
+     * Возвращает первую карту.
      *
-     * @return список карт
+     * return первая карта
      */
-    public List<Card> getCards() {
-        return cards;
+    public Card getFirstCard() {
+        return cards.get(0);
     }
 
     /**
-     * Считает сумму очков с учётом тузов.
+     * Возвращает первую карту.
      *
-     * @return сумма очков
+     * return первая карта
      */
-    public int score() {
+    public Card getSecondCard() {
+        return cards.get(1);
+    }
+
+    /**
+     * Пересчитывает количество очков.
+     */
+    private void calculateScore(){
         int sum = 0;
         int acesCnt = 0;
         for (Card c : cards) {
@@ -42,7 +50,15 @@ public class Hand {
             sum -= 10;
             acesCnt--;
         }
-        return sum;
+        score = sum;
+    }
+    /**
+     * Считает сумму очков с учётом тузов.
+     *
+     * @return сумма очков
+     */
+    public int getScore() {
+        return score;
     }
 
     /**
@@ -52,6 +68,7 @@ public class Hand {
      */
     public void addCard(Card card) {
         cards.add(card);
+        calculateScore();
     }
 
     /**
@@ -60,7 +77,7 @@ public class Hand {
      * @return {@code true}, если перебор
      */
     public boolean tooMuch() {
-        return (score() > 21);
+        return (score > 21);
     }
 
     /**
@@ -69,7 +86,7 @@ public class Hand {
      * @return {@code true}, если блэкджек
      */
     public boolean blackJack() {
-        return (cards.size() == 2 && score() == 21);
+        return (cards.size() == 2 && score == 21);
     }
 
     /**
@@ -79,6 +96,6 @@ public class Hand {
      */
     @Override
     public String toString() {
-        return cards + " => " + score();
+        return cards + " => " + score;
     }
 }

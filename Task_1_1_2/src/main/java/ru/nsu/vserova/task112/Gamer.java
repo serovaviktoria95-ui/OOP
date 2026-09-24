@@ -28,4 +28,20 @@ public class Gamer {
     public String getName() {
         return gamerName;
     }
+
+    /**
+     * Берет карту.
+     */
+    public void takeCard(Card card) {
+        hand.addCard(card);
+    }
+
+    /**
+     * Проверяет, есть ли блэкджек.
+     *
+     *  @return true или false
+     */
+    public boolean hasBlackJack() {
+        return hand.blackJack();
+    }
 }

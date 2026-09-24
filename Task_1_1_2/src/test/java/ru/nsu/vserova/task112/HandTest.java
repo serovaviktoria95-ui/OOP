@@ -16,7 +16,7 @@ class HandTest {
         Hand hand = new Hand();
         hand.addCard(new Card(Suit.Spades, Rank.Queen));
         hand.addCard(new Card(Suit.Spades, Rank.Two));
-        assertEquals(12, hand.score());
+        assertEquals(12, hand.getScore());
     }
 
     @Test
@@ -24,7 +24,7 @@ class HandTest {
         Hand hand = new Hand();
         hand.addCard(new Card(Suit.Hearts, Rank.Three));
         hand.addCard(new Card(Suit.Spades, Rank.Five));
-        assertEquals(8, hand.score());
+        assertEquals(8, hand.getScore());
     }
 
     @Test
@@ -32,18 +32,7 @@ class HandTest {
         Hand hand = new Hand();
         hand.addCard(new Card(Suit.Spades, Rank.Ace));
         hand.addCard(new Card(Suit.Hearts, Rank.Ace));
-        assertEquals(12, hand.score());
-    }
-
-    @Test
-    void addCardCorrect() {
-        Hand hand = new Hand();
-        Card card = new Card(Suit.Spades, Rank.Queen);
-
-        hand.addCard(card);
-
-        assertEquals(1, hand.getCards().size());
-        assertEquals(card, hand.getCards().get(0));
+        assertEquals(12, hand.getScore());
     }
 
     @Test
@@ -66,4 +55,35 @@ class HandTest {
 
         assertTrue(hand.blackJack());
     }
+
+    @Test
+    void blackJackFalse() {
+        Hand hand = new Hand();
+        hand.addCard(new Card(Suit.Spades, Rank.Seven));
+        hand.addCard(new Card(Suit.Hearts, Rank.Seven));
+        hand.addCard(new Card(Suit.Diamonds, Rank.Seven));
+        assertEquals(21, hand.getScore());
+        assertFalse(hand.blackJack());
+    }
+
+    @Test
+    void getFirstAndSecondCard() {
+        Hand hand = new Hand();
+        Card first = new Card(Suit.Spades, Rank.Queen);
+        Card second = new Card(Suit.Hearts, Rank.Three);
+        hand.addCard(first);
+        hand.addCard(second);
+        assertEquals(first, hand.getFirstCard());
+        assertEquals(second, hand.getSecondCard());
+    }
+
+    @Test
+    void toStringCorrect() {
+        Hand hand = new Hand();
+        hand.addCard(new Card(Suit.Spades, Rank.Queen));
+        hand.addCard(new Card(Suit.Hearts, Rank.Three));
+        assertTrue(hand.toString().contains("13"));
+    }
+
+
 }

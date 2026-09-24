@@ -1,5 +1,6 @@
 package ru.nsu.vserova.task112;
 
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -59,17 +60,14 @@ public class Game {
         dealer = new Dealer();
         deck = new Deck();
 
-        gamer.getHand().addCard(deck.pull());
-        gamer.getHand().addCard(deck.pull());
-        dealer.getHand().addCard(deck.pull());
-        dealer.getHand().addCard(deck.pull());
+        dealCards();
 
         printHands(true);
 
-        if (gamer.getHand().blackJack()) {
+        if (gamer.hasBlackJack()) {
             gamerBlackjack();
             return;
-        } else if (dealer.getHand().blackJack()) {
+        } else if (dealer.hasBlackJack()) {
             dealerBlackjack();
             return;
         }
@@ -88,19 +86,28 @@ public class Game {
     }
 
     /**
+     * Дилер раздает по 2 карты.
+     */
+    private void dealCards() {
+        gamer.takeCard(deck.pull());
+        gamer.takeCard(deck.pull());
+        dealer.takeCard(deck.pull());
+        dealer.takeCard(deck.pull());
+    }
+
+    /**
      * Ход дилера.
      */
     public void dealerTurn() {
         System.out.println("Ход дилера");
         System.out.println("-------");
 
-        Card hidden = dealer.getHand().getCards().get(1);
+        Card hidden = dealer.openHiddenCard();
         System.out.println("Дилер открывает закрытую карту " + hidden);
         printHands(false);
 
-        while (dealer.dealerPulls()) {
-            Card card = deck.pull();
-            dealer.getHand().addCard(card);
+        List<Card> taken = dealer.makeTurn(deck);
+        for (Card card : taken) {
             System.out.println("Дилер открывает карту " + card);
             printHands(false);
         }
@@ -132,8 +139,8 @@ public class Game {
      * Победитель.
      */
     public void winner() {
-        int gamerScore = gamer.getHand().score();
-        int dealerScore = dealer.getHand().score();
+        int gamerScore = gamer.getHand().getScore();
+        int dealerScore = dealer.getHand().getScore();
 
         if (dealer.getHand().tooMuch()) {
             System.out.println("У дилера перебор! Вы выиграли раунд!");
@@ -156,7 +163,7 @@ public class Game {
      */
     private void gamerPulls(){
         Card card = deck.pull();
-        gamer.getHand().addCard(card);
+        gamer.takeCard(card);
         System.out.println("Вы открыли карту " + card);
         printHands(true);
     }
@@ -169,7 +176,7 @@ public class Game {
 
         if (hideDealerCard) {
             System.out.print("    Карты дилера: [");
-            System.out.print(dealer.getHand().getCards().get(0));
+            System.out.print(dealer.getHand().getFirstCard());
             System.out.println(", <закрытая карта>]");
         } else {
             System.out.println("    Карты дилера: " + dealer.getHand());
@@ -178,8 +185,6 @@ public class Game {
 
     /**
      * Спрашивает у игрока, взять карту или остановиться.
-     *
-     * @return 1 — взять карту, 0 — остановиться
      */
     private int gamerChoice() {
         System.out.println("Введите “1”, чтобы взять карту, и “0”, чтобы остановиться...");
@@ -188,8 +193,6 @@ public class Game {
 
     /**
      * Спрашивает, хочет ли игрок сыграть ещё раунд.
-     *
-     * @return {@code true}, если игрок ввёл 1
      */
     private boolean again() {
         System.out.println("Ещё раунд? (1 - да, 0 - нет)");
