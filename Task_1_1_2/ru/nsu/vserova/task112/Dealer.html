@@ -120,12 +120,22 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Проверяет, должен ли дилер взять ещё карту.</div>
 </div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Card.html" title="class in ru.nsu.vserova.task112">Card</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#makeTurn(ru.nsu.vserova.task112.Deck)" class="member-name-link">makeTurn</a><wbr>(<a href="Deck.html" title="class in ru.nsu.vserova.task112">Deck</a>&nbsp;deck)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Дилер делает ход.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="Card.html" title="class in ru.nsu.vserova.task112">Card</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#openHiddenCard()" class="member-name-link">openHiddenCard</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Дилер открывает скрытую карту.</div>
+</div>
 </div>
 </div>
 </div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-ru.nsu.vserova.task112.Gamer">Methods inherited from class&nbsp;ru.nsu.vserova.task112.<a href="Gamer.html" title="class in ru.nsu.vserova.task112">Gamer</a></h3>
-<code><a href="Gamer.html#getHand()">getHand</a>, <a href="Gamer.html#getName()">getName</a></code></div>
+<code><a href="Gamer.html#getHand()">getHand</a>, <a href="Gamer.html#getName()">getName</a>, <a href="Gamer.html#hasBlackJack()">hasBlackJack</a>, <a href="Gamer.html#takeCard(ru.nsu.vserova.task112.Card)">takeCard</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
 <code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#clone()" title="class or interface in java.lang" class="external-link">clone</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)" title="class or interface in java.lang" class="external-link">equals</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#finalize()" title="class or interface in java.lang" class="external-link">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#getClass()" title="class or interface in java.lang" class="external-link">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#hashCode()" title="class or interface in java.lang" class="external-link">hashCode</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#notify()" title="class or interface in java.lang" class="external-link">notify</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#notifyAll()" title="class or interface in java.lang" class="external-link">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()" title="class or interface in java.lang" class="external-link">toString</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait()" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait(long)" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait(long,int)" title="class or interface in java.lang" class="external-link">wait</a></code></div>
@@ -159,10 +169,20 @@ loadScripts(document, 'script');</script>
 <h3>dealerPulls</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">dealerPulls</span>()</div>
 <div class="block">Проверяет, должен ли дилер взять ещё карту.</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd><code>true</code>, если дилер должен взять карту</dd>
-</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="openHiddenCard()">
+<h3>openHiddenCard</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="Card.html" title="class in ru.nsu.vserova.task112">Card</a></span>&nbsp;<span class="element-name">openHiddenCard</span>()</div>
+<div class="block">Дилер открывает скрытую карту.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="makeTurn(ru.nsu.vserova.task112.Deck)">
+<h3>makeTurn</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Card.html" title="class in ru.nsu.vserova.task112">Card</a>&gt;</span>&nbsp;<span class="element-name">makeTurn</span><wbr><span class="parameters">(<a href="Deck.html" title="class in ru.nsu.vserova.task112">Deck</a>&nbsp;deck)</span></div>
+<div class="block">Дилер делает ход.</div>
 </section>
 </li>
 </ul>
