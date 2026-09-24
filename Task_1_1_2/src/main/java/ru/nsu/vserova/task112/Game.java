@@ -161,7 +161,7 @@ public class Game {
     /**
      * Игрок берёт одну карту из колоды.
      */
-    private void gamerPulls(){
+    private void gamerPulls() {
         Card card = deck.pull();
         gamer.takeCard(card);
         System.out.println("Вы открыли карту " + card);

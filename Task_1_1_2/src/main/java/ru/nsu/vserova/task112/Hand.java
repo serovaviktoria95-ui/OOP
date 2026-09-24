@@ -18,8 +18,6 @@ public class Hand {
 
     /**
      * Возвращает первую карту.
-     *
-     * return первая карта
      */
     public Card getFirstCard() {
         return cards.get(0);
@@ -27,8 +25,6 @@ public class Hand {
 
     /**
      * Возвращает первую карту.
-     *
-     * return первая карта
      */
     public Card getSecondCard() {
         return cards.get(1);
@@ -57,6 +53,7 @@ public class Hand {
      *
      * @return сумма очков
      */
+
     public int getScore() {
         return score;
     }
@@ -73,8 +70,6 @@ public class Hand {
 
     /**
      * Проверяет, не превышает ли сумма 21.
-     *
-     * @return {@code true}, если перебор
      */
     public boolean tooMuch() {
         return (score > 21);
@@ -83,7 +78,6 @@ public class Hand {
     /**
      * Проверяет блэкджек.
      *
-     * @return {@code true}, если блэкджек
      */
     public boolean blackJack() {
         return (cards.size() == 2 && score == 21);

@@ -60,7 +60,8 @@ class GameTest {
 
     @Test
     void playManyRounds() {
-        String input = "0\n1\n0\n1\n0\n1\n0\n0\n";
+        String input =
+                "0\n1\n0\n1\n0\n1\n0\n0\n";
         InputStream original = System.in;
         System.setIn(new ByteArrayInputStream(input.getBytes()));
 
