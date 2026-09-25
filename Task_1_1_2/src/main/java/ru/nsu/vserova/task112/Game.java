@@ -86,6 +86,13 @@ public class Game {
     }
 
     /**
+     * Возвращает номер текущего раунда.
+     */
+    public int getRoundCnt() {
+        return roundCnt;
+    }
+
+    /**
      * Дилер раздает по 2 карты.
      */
     private void dealCards() {
@@ -152,8 +159,6 @@ public class Game {
             printDealerWins();
         } else {
             System.out.println("Ничья!");
-            gamerWins++;
-            dealerWins++;
             printScore();
         }
     }
@@ -208,6 +213,20 @@ public class Game {
     }
 
     /**
+     * Возвращает игрока.
+     */
+    public Gamer getGamer() {
+        return gamer;
+    }
+
+    /**
+     * Возвращает дилера.
+     */
+    public Dealer getDealer() {
+        return dealer;
+    }
+
+    /**
      * Сообщает о блэкджеке дилера и увеличивает его счёт.
      */
     private void dealerBlackjack() {
@@ -225,11 +244,25 @@ public class Game {
     }
 
     /**
+     * Возвращает количество побед дилера.
+     */
+    public int getDealerWins() {
+        return dealerWins;
+    }
+
+    /**
      * Сообщает о победе игрока и увеличивает его счёт.
      */
     private void printGamerWins() {
         gamerWins++;
         System.out.println("Счет " + gamerWins + ":" + dealerWins + " в вашу пользу.");
+    }
+
+    /**
+     * Возвращает количество побед игрока.
+     */
+    public int getGamerWins() {
+        return gamerWins;
     }
 
     /**

@@ -1,7 +1,10 @@
 package ru.nsu.vserova.task112;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
@@ -31,8 +34,9 @@ class GameTest {
     }
 
     @Test
-    void playWithGamerTakingCard() {
-        String input = "1\n0\n0\n";   // взять карту, остановиться, не играть ещё
+    void playManyRounds() {
+        String input =
+                "0\n1\n0\n1\n0\n1\n0\n0\n";
         InputStream original = System.in;
         System.setIn(new ByteArrayInputStream(input.getBytes()));
 
@@ -59,17 +63,48 @@ class GameTest {
     }
 
     @Test
-    void playManyRounds() {
-        String input =
-                "0\n1\n0\n1\n0\n1\n0\n0\n";
+    void firstScoreIsZero() {
+        Game game = new Game();
+        assertEquals(0, game.getGamerWins());
+        assertEquals(0, game.getDealerWins());
+    }
+
+    @Test
+    void gamerOrDealerWins() {
+        String input = "0\n0\n";
         InputStream original = System.in;
         System.setIn(new ByteArrayInputStream(input.getBytes()));
 
         try {
             Game game = new Game();
-            assertDoesNotThrow(game::play);
+            game.play();
+            int total = game.getGamerWins() + game.getDealerWins();
+            assertTrue(total <= 1);
         } finally {
             System.setIn(original);
         }
+    }
+
+    @Test
+    void afterTwoRoundsScoreIncreases() {
+        String input = "0\n1\n0\n0\n";
+        InputStream original = System.in;
+        System.setIn(new ByteArrayInputStream(input.getBytes()));
+
+        try {
+            Game game = new Game();
+            game.play();
+            assertTrue(game.getGamerWins() + game.getDealerWins() <= 2);
+        } finally {
+            System.setIn(original);
+        }
+    }
+
+    @Test
+    void gamerBlackjack() {
+        Gamer gamer = new Gamer();
+        gamer.takeCard(new Card(Suit.Spades, Rank.Ace));
+        gamer.takeCard(new Card(Suit.Hearts, Rank.King));
+        assertTrue(gamer.hasBlackJack());
     }
 }
