@@ -109,19 +109,44 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Ход дилера.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#play()" class="member-name-link">play</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="Dealer.html" title="class in ru.nsu.vserova.task112">Dealer</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getDealer()" class="member-name-link">getDealer</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Главный цикл игры.</div>
+<div class="block">Возвращает дилера.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getDealerWins()" class="member-name-link">getDealerWins</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Возвращает количество побед дилера.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="Gamer.html" title="class in ru.nsu.vserova.task112">Gamer</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getGamer()" class="member-name-link">getGamer</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Возвращает игрока.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getGamerWins()" class="member-name-link">getGamerWins</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Возвращает количество побед игрока.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRoundCnt()" class="member-name-link">getRoundCnt</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Возвращает номер текущего раунда.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#printHands(boolean)" class="member-name-link">printHands</a><wbr>(boolean&nbsp;hideDealerCard)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#play()" class="member-name-link">play</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Выводит карты игрока и дилера.</div>
+<div class="block">Главный цикл игры.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#winner()" class="member-name-link">winner</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#printHands(boolean)" class="member-name-link">printHands</a><wbr>(boolean&nbsp;hideDealerCard)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Выводит карты игрока и дилера.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#winner()" class="member-name-link">winner</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Победитель.</div>
 </div>
 </div>
@@ -163,6 +188,13 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="getRoundCnt()">
+<h3>getRoundCnt</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getRoundCnt</span>()</div>
+<div class="block">Возвращает номер текущего раунда.</div>
+</section>
+</li>
+<li>
 <section class="detail" id="dealerTurn()">
 <h3>dealerTurn</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">dealerTurn</span>()</div>
@@ -181,6 +213,34 @@ loadScripts(document, 'script');</script>
 <h3>printHands</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">printHands</span><wbr><span class="parameters">(boolean&nbsp;hideDealerCard)</span></div>
 <div class="block">Выводит карты игрока и дилера.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="getGamer()">
+<h3>getGamer</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="Gamer.html" title="class in ru.nsu.vserova.task112">Gamer</a></span>&nbsp;<span class="element-name">getGamer</span>()</div>
+<div class="block">Возвращает игрока.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="getDealer()">
+<h3>getDealer</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="Dealer.html" title="class in ru.nsu.vserova.task112">Dealer</a></span>&nbsp;<span class="element-name">getDealer</span>()</div>
+<div class="block">Возвращает дилера.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="getDealerWins()">
+<h3>getDealerWins</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getDealerWins</span>()</div>
+<div class="block">Возвращает количество побед дилера.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="getGamerWins()">
+<h3>getGamerWins</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getGamerWins</span>()</div>
+<div class="block">Возвращает количество побед игрока.</div>
 </section>
 </li>
 </ul>
