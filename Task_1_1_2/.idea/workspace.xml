@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57f6e4f8-c9d4-424a-9c85-f79e6666dc38" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/vserova/task112/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/vserova/task112/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/vserova/task112/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/vserova/task112/Hand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/task112/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/task112/GameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,36 +42,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build Task_1_1_2.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SuitTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CardTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.DealerTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.DeckTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.GameTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.GamerTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.HandTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.MainTest.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.RankTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.SuitTest.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;task-1-2&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Виктория/OOP/Task_1_1_2&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Виктория/OOP/Task_1_1_2/src/main/java/ru/nsu/vserova/Task_1_1_1/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build Task_1_1_2.executor": "Run",
+    "Gradle.SuitTest.executor": "Run",
+    "JUnit.CardTest.executor": "Coverage",
+    "JUnit.DealerTest.executor": "Coverage",
+    "JUnit.DeckTest.executor": "Coverage",
+    "JUnit.GameTest.executor": "Coverage",
+    "JUnit.GamerTest.executor": "Coverage",
+    "JUnit.HandTest.executor": "Coverage",
+    "JUnit.MainTest.executor": "Debug",
+    "JUnit.RankTest.executor": "Coverage",
+    "JUnit.SuitTest.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "task-1-2",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Виктория/OOP/Task_1_1_2",
+    "node.js.detected.package.jshint": "true",
+    "node.js.selected.package.jshint": "",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/Виктория/OOP/Task_1_1_2/src/main/java/ru/nsu/vserova/Task_1_1_1/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -204,7 +210,7 @@
     <SUITE FILE_PATH="coverage/Task_1_1_2$SuitTest.ic" NAME="SuitTest Coverage Results" MODIFIED="1789891297408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.nsu.vserova.Task_1_1_2.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Task_1_1_2$GameTest.ic" NAME="GameTest Coverage Results" MODIFIED="1790316565458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+    <SUITE FILE_PATH="coverage/Task_1_1_2$GameTest.ic" NAME="GameTest Coverage Results" MODIFIED="1790394903652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.nsu.vserova.task112.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Task_1_1_2$DealerTest.ic" NAME="DealerTest Coverage Results" MODIFIED="1790232308564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">

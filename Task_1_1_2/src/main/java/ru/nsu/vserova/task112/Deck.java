@@ -30,9 +30,6 @@ public class Deck {
 
     /**
      * Выдаёт верхнюю карту из колоды.
-     *
-     * @return карта
-     * @throws IllegalArgumentException если колода пуста
      */
     public Card pull() {
         if (cards.size() <= 0) {

@@ -21,13 +21,23 @@ public class Game {
     private int dealerWins = 0;
 
     /** Колода. */
-    private Deck deck = new Deck();
+    private Deck deck;
 
     /** Игрок. */
-    private Gamer gamer = new Gamer();
+    private Gamer gamer;
 
     /** Комп. игрок. */
-    private Dealer dealer = new Dealer();
+    private Dealer dealer;
+
+    public Game() {
+        this(new Deck());
+    }
+
+    public Game(Deck deck) {   // ← есть?
+        this.deck = deck;
+        this.gamer = new Gamer();
+        this.dealer = new Dealer();
+    }
 
     /**
      * Главный цикл игры.
@@ -58,7 +68,6 @@ public class Game {
 
         gamer = new Gamer();
         dealer = new Dealer();
-        deck = new Deck();
 
         dealCards();
 

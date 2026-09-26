@@ -14,7 +14,7 @@ import org.junit.jupiter.api.Test;
 class DealerTest {
 
     @Test
-    void getNameCorrect() {
+    void dealerNameIsNull() {
         Gamer gamer = new Gamer();
         assertNull(gamer.getName());
     }

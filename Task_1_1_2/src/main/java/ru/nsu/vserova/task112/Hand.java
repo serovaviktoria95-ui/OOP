@@ -24,7 +24,7 @@ public class Hand {
     }
 
     /**
-     * Возвращает первую карту.
+     * Возвращает вторую карту.
      */
     public Card getSecondCard() {
         return cards.get(1);
@@ -33,7 +33,7 @@ public class Hand {
     /**
      * Пересчитывает количество очков.
      */
-    private void calculateScore(){
+    private void calculateScore() {
         int sum = 0;
         int acesCnt = 0;
         for (Card c : cards) {
