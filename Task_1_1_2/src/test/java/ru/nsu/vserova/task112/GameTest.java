@@ -9,7 +9,6 @@ import static org.mockito.Mockito.when;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
-
 import org.junit.jupiter.api.Test;
 
 class GameTest {

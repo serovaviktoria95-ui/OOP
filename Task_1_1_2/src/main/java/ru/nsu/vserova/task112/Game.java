@@ -29,10 +29,16 @@ public class Game {
     /** Комп. игрок. */
     private Dealer dealer;
 
+    /**
+     * Создаёт игру со случайной колодой из 52 карт.
+     */
     public Game() {
         this(new Deck());
     }
 
+    /**
+     * Создаёт игру с заданной колодой.
+     */
     public Game(Deck deck) {   // ← есть?
         this.deck = deck;
         this.gamer = new Gamer();
