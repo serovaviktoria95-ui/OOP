@@ -1,6 +1,7 @@
 package ru.nsu.vserova.task112;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.jupiter.api.Test;
 
 class DeckTest {
