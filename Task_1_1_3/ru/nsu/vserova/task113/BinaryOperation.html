@@ -83,6 +83,7 @@ loadScripts(document, 'script');</script>
 <div class="type-signature"><span class="modifiers">public abstract class </span><span class="element-name type-name-label">BinaryOperation</span>
 <span class="extends-implements">extends <a href="Expression.html" title="class in ru.nsu.vserova.task113">Expression</a></span></div>
 <div class="block">Промежуточный класс м/у Expression и Add, Div, Mul, Sub.
+
  <p>
      Нужен для того, чтобы не переписывать один и тот же код.
      Однако нельзя внести в Expression, тк эта часть не нужна потомкам Number и Variable.
@@ -195,8 +196,8 @@ loadScripts(document, 'script');</script>
 <div class="block">Бинарная операция с двумя операндами.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>left</code> - </dd>
-<dd><code>right</code> - </dd>
+<dd><code>left</code> - левый операнд.</dd>
+<dd><code>right</code> - правый операнд.</dd>
 </dl>
 </section>
 </li>
