@@ -8,19 +8,26 @@ class MulTest {
 
     @Test
     void testEvalTwoNumbers() {
-        Expression e = new Mul(new Number(3), new Number(1));
-        assertEquals(3, e.eval(""));
+        assertEquals(12, new Mul(new Number(4), new Number(3)).eval(""));
     }
 
     @Test
     void testEvalNumberAndVariable() {
-        Expression e = new Mul(new Number(10), new Variable("x"));
-        assertEquals(30, e.eval("x = 3"));
+        assertEquals(20, new Mul(new Number(2), new Variable("x")).eval("x = 10"));
     }
 
     @Test
     void testEvalTwoVariables() {
-        Expression e = new Mul(new Variable("x"), new Variable("y"));
-        assertEquals(130, e.eval("x = 13; y = 10"));
+        assertEquals(30, new Mul(new Variable("x"), new Variable("y")).eval("x = 5; y = 6"));
+    }
+
+    @Test
+    void testEvalNegative() {
+        assertEquals(-6, new Mul(new Number(-2), new Number(3)).eval(""));
+    }
+
+    @Test
+    void testDerivativeNumbers() {
+        assertEquals(0, new Mul(new Number(2), new Number(3)).derivative("x").eval(""));
     }
 }

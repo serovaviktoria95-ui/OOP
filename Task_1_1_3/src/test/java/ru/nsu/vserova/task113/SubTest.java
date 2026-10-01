@@ -8,19 +8,21 @@ class SubTest {
 
     @Test
     void testEvalTwoNumbers() {
-        Expression e = new Sub(new Number(3), new Number(1));
-        assertEquals(2, e.eval(""));
+        assertEquals(1, new Sub(new Number(3), new Number(2)).eval(""));
     }
 
     @Test
     void testEvalNumberAndVariable() {
-        Expression e = new Sub(new Number(10), new Variable("x"));
-        assertEquals(7, e.eval("x = 3"));
+        assertEquals(7, new Sub(new Number(10), new Variable("x")).eval("x = 3"));
     }
 
     @Test
     void testEvalTwoVariables() {
-        Expression e = new Sub(new Variable("x"), new Variable("y"));
-        assertEquals(3, e.eval("x = 13; y = 10"));
+        assertEquals(3, new Sub(new Variable("x"), new Variable("y")).eval("x = 13; y = 10"));
+    }
+
+    @Test
+    void testDerivativeNumbers() {
+        assertEquals(0, new Sub(new Number(1), new Number(2)).derivative("x").eval(""));
     }
 }

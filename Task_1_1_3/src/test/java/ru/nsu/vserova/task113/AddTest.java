@@ -8,19 +8,21 @@ class AddTest {
 
     @Test
     void testEvalTwoNumbers() {
-        Expression e = new Add(new Number(1), new Number(2));
-        assertEquals(3, e.eval(""));
+        assertEquals(3, new Add(new Number(1), new Number(2)).eval(""));
     }
 
     @Test
     void testEvalNumberAndVariable() {
-        Expression e = new Add(new Number(3), new Variable("x"));
-        assertEquals(13, e.eval("x = 10"));
+        assertEquals(13, new Add(new Number(3), new Variable("x")).eval("x = 10"));
     }
 
     @Test
     void testEvalTwoVariables() {
-        Expression e = new Add(new Variable("x"), new Variable("y"));
-        assertEquals(23, e.eval("x = 10; y = 13"));
+        assertEquals(23, new Add(new Variable("x"), new Variable("y")).eval("x = 10; y = 13"));
+    }
+
+    @Test
+    void testDerivativeNumbers() {
+        assertEquals(0, new Add(new Number(1), new Number(2)).derivative("x").eval(""));
     }
 }
