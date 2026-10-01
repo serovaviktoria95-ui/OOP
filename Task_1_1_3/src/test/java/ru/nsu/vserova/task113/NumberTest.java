@@ -8,6 +8,11 @@ import org.junit.jupiter.api.Test;
 class NumberTest {
 
     @Test
+    void testEvalPositive() {
+        assertEquals(5, new Number(5).eval(""));
+    }
+
+    @Test
     void testEvalZero() {
         assertEquals(0, new Number(0).eval(""));
     }
@@ -15,6 +20,11 @@ class NumberTest {
     @Test
     void testEvalNegative() {
         assertEquals(-3, new Number(-3).eval(""));
+    }
+
+    @Test
+    void testEvalIgnoresAssignments() {
+        assertEquals(7, new Number(7).eval("x = 10; y = 13"));
     }
 
     @Test
@@ -26,5 +36,11 @@ class NumberTest {
     void testDerivativeByAnyVarIsZero() {
         assertEquals(0, new Number(5).derivative("y").eval(""));
         assertEquals(0, new Number(5).derivative("x").eval(""));
+    }
+
+    @Test
+    void testDerivativeIsNewObject() {
+        Number n = new Number(5);
+        assertNotSame(n, n.derivative("x"));
     }
 }
