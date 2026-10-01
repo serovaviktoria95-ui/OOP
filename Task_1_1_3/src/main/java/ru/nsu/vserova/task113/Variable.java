@@ -29,7 +29,9 @@ public class Variable extends Expression {
         // Сравниваем содержимое, а не ссылки
         if (name.equals(var)) {
             return new Number(1);
-        } else return new Number(0);
+        } else {
+            return new Number(0);
+        }
     }
 
     /**
@@ -39,7 +41,9 @@ public class Variable extends Expression {
     public int eval(String expr) {
         for (String pair : expr.split(";")) {
             pair = pair.trim();
-            if (pair.isEmpty()) continue;
+            if (pair.isEmpty()) {
+                continue;
+            }
             String[] p = pair.split("=");
             if (p[0].trim().equals(name)) {
                 return Integer.parseInt(p[1].trim());

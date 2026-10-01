@@ -4,6 +4,7 @@ package ru.nsu.vserova.task113;
  * Вычитание одного выражения из другого.
  */
 public class Sub extends BinaryOperation {
+
     /**
      * Создаёт операцию сложения двух выражений.
      *
@@ -18,10 +19,12 @@ public class Sub extends BinaryOperation {
      * Возвращает символ операции вычитания.
      */
     @Override
-    protected String symbol() { return "-"; }
+    protected String symbol() {
+        return "-";
+    }
 
     /**
-     * (u - v)' = u' - v'
+     * (u - v)' = u' - v'.
      */
     @Override
     public Expression derivative(String var) {

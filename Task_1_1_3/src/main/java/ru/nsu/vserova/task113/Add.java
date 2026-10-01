@@ -19,10 +19,12 @@ public class Add extends BinaryOperation {
      * Возвращает символ операции сложения.
      */
     @Override
-    protected String symbol() { return "+"; }
+    protected String symbol() {
+        return "+";
+    }
 
     /**
-     * (u + v)' = u' + v'
+     * (u + v)' = u' + v'.
      */
     @Override
     public Expression derivative(String var) {

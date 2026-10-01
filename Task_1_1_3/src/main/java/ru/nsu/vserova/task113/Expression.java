@@ -5,7 +5,9 @@ package ru.nsu.vserova.task113;
  */
 public abstract class Expression {
     public abstract void print();
+
     public abstract Expression derivative(String var);
+
     public abstract int eval(String expr);
 
     /**

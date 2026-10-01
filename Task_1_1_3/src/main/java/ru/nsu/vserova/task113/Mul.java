@@ -21,7 +21,7 @@ public class Mul extends BinaryOperation {
     protected String symbol() { return "*"; }
 
     /**
-     * (u * v)' = u'v + v'u
+     * (u * v)' = u'v + v'u.
      */
     @Override
     public Expression derivative(String var) {

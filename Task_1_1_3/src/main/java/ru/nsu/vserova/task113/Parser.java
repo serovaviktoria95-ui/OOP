@@ -1,5 +1,8 @@
 package ru.nsu.vserova.task113;
 
+/**
+ * Разбирает выражение.
+ */
 public class Parser {
     private final String str;
     private int pos = 0;
@@ -51,7 +54,9 @@ public class Parser {
 
         // иначе — токен число или переменная
         int start = pos;
-        while (pos < str.length() && (isDigit(str.charAt(pos)) || isLetter(str.charAt(pos)))) {
+        while
+        (pos < str.length() && (isDigit(str.charAt(pos))
+                || isLetter(str.charAt(pos)))) {
             pos++;
         }
         String token = str.substring(start, pos);

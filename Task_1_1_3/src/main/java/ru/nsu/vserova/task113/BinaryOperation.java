@@ -2,6 +2,7 @@ package ru.nsu.vserova.task113;
 
 /**
  * Промежуточный класс м/у Expression и Add, Div, Mul, Sub.
+ *
  * <p>
  *     Нужен для того, чтобы не переписывать один и тот же код.
  *     Однако нельзя внести в Expression, тк эта часть не нужна потомкам Number и Variable.
@@ -13,8 +14,9 @@ public abstract class BinaryOperation extends Expression {
 
     /**
      * Бинарная операция с двумя операндами.
-     * @param left
-     * @param right
+     *
+     * @param left левый операнд.
+     * @param right правый операнд.
      */
     protected BinaryOperation(Expression left, Expression right) {
         this.left = left;

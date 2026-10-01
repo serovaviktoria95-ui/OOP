@@ -21,7 +21,7 @@ public class Div extends BinaryOperation {
     protected String symbol() { return "/"; }
 
     /**
-     * (u/v)' = (u'v - v'u)/(v^2)
+     * (u/v)' = (u'v - v'u)/(v^2).
      */
     @Override
     public Expression derivative(String var) {

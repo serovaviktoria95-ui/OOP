@@ -6,6 +6,9 @@ import java.util.Scanner;
  * Точка входа программы.
  */
 public class Main {
+    /**
+     * Запускает демонстрацию работы выражений.
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
