@@ -18,7 +18,9 @@ public class Mul extends BinaryOperation {
      * Возвращает символ операции умножения.
      */
     @Override
-    protected String symbol() { return "*"; }
+    protected String symbol() {
+        return "*";
+    }
 
     /**
      * (u * v)' = u'v + v'u.

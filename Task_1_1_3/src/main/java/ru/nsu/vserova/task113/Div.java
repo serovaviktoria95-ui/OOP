@@ -18,7 +18,9 @@ public class Div extends BinaryOperation {
      * Возвращает символ операции деления.
      */
     @Override
-    protected String symbol() { return "/"; }
+    protected String symbol() {
+        return "/";
+    }
 
     /**
      * (u/v)' = (u'v - v'u)/(v^2).
