@@ -18,7 +18,13 @@ public class Parser {
      * Разбирает всю строку целиком.
      */
     public Expression parse() {
+        if (str.isEmpty()) {
+            throw new RuntimeException("Пустая строка");
+        }
         Expression e = parseExpr();
+        if (pos != str.length()) {
+            throw new RuntimeException("Лишние символы на позиции " + pos);
+        }
         return e;
     }
 
@@ -54,8 +60,7 @@ public class Parser {
 
         // иначе — токен число или переменная
         int start = pos;
-        while
-        (pos < str.length() && (isDigit(str.charAt(pos))
+        while (pos < str.length() && (isDigit(str.charAt(pos))
                 || isLetter(str.charAt(pos)))) {
             pos++;
         }

@@ -14,10 +14,11 @@ public class Variable extends Expression {
     }
 
     /**
-     * Печатается имя переменной.
+     * Возвращает имя переменной.
      */
-    public void print() {
-        System.out.print(name);
+    @Override
+    public String toString() {
+        return name;
     }
 
     /**

@@ -1,26 +1,45 @@
 package ru.nsu.vserova.task113;
 
-import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 
 import org.junit.jupiter.api.Test;
 
 class ExpressionTest {
 
-    @Test
-    void testAllAreExpressions() {
-        Expression[] exprs = {
-            new Number(1),
-            new Variable("x"),
-            new Add(new Number(1), new Number(2)),
-            new Sub(new Number(5), new Number(3)),
-            new Mul(new Number(2), new Number(3)),
-            new Div(new Number(6), new Number(2)),
-        };
-        for (Expression e : exprs) {
-            assertNotNull(e);
-            assertDoesNotThrow(() -> e.eval("x = 1"));
-            assertDoesNotThrow(() -> e.derivative("x"));
+    private String capturePrint(Expression e) {
+        PrintStream original = System.out;
+        ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(buffer));
+        try {
+            e.print();
+            return buffer.toString();
+        } finally {
+            System.setOut(original);
         }
+    }
+
+    private String capturePrintln(Expression e) {
+        PrintStream original = System.out;
+        ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(buffer));
+        try {
+            e.println();
+            return buffer.toString();
+        } finally {
+            System.setOut(original);
+        }
+    }
+
+    @Test
+    void testPrint() {
+        assertEquals("(1+2)", capturePrint(new Add(new Number(1), new Number(2))));
+    }
+
+    @Test
+    void testPrintln() {
+        assertEquals("(1+2)" + System.lineSeparator(), capturePrintln(new Add(new Number(1), new Number(2))));
     }
 }

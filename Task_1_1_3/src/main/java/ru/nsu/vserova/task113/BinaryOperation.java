@@ -30,15 +30,9 @@ public abstract class BinaryOperation extends Expression {
      */
     protected abstract String symbol();
 
-    /**
-     * Печатает выражение в консоль.
-     */
+    /** Печатает (left symbol right) без перевода строки, через toString. */
     @Override
-    public void print() {
-        System.out.print('(');
-        left.print();
-        System.out.print(symbol());
-        right.print();
-        System.out.print(')');
+    public String toString() {
+        return "(" + left + symbol() + right + ")";
     }
 }

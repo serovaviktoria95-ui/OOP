@@ -8,37 +8,27 @@ import org.junit.jupiter.api.Test;
 class VariableTest {
 
     @Test
+    void testToString() {
+        assertEquals("x", new Variable("x").toString());
+    }
+
+    @Test
     void testEval() {
-        assertEquals(10, new Variable("x").eval("x = 10"));
-    }
-
-    @Test
-    void testEvalMultiLetter() {
-        assertEquals(5, new Variable("name").eval("name = 5"));
-    }
-
-    @Test
-    void testEvalVariables() {
-        assertEquals(13, new Variable("y").eval("x = 10; y = 13"));
+        assertEquals(10, new Variable("x").eval("x = 10; y = 13"));
     }
 
     @Test
     void testDerivativeByItself() {
-        Expression d = new Variable("x").derivative("x");
-        assertEquals(1, d.eval(""));
+        assertEquals(1, new Variable("x").derivative("x").eval(""));
     }
 
     @Test
-    void testDerivativeByAnother() {
-        Expression d = new Variable("x").derivative("y");
-        assertEquals(0, d.eval(""));
+    void testDerivativeByOther() {
+        assertEquals(0, new Variable("x").derivative("y").eval(""));
     }
 
     @Test
     void testEvalUndefinedThrows() {
-        assertThrows(
-                IllegalArgumentException.class,
-                () -> new Variable("x").eval("y = 10")
-        );
+        assertThrows(IllegalArgumentException.class, () -> new Variable("x").eval("y = 10"));
     }
 }

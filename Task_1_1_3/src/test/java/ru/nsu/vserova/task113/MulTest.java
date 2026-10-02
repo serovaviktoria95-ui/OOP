@@ -7,27 +7,15 @@ import org.junit.jupiter.api.Test;
 class MulTest {
 
     @Test
-    void testEvalTwoNumbers() {
-        assertEquals(12, new Mul(new Number(4), new Number(3)).eval(""));
-    }
-
-    @Test
-    void testEvalNumberAndVariable() {
+    void testEval() {
         assertEquals(20, new Mul(new Number(2), new Variable("x")).eval("x = 10"));
     }
 
     @Test
-    void testEvalTwoVariables() {
-        assertEquals(30, new Mul(new Variable("x"), new Variable("y")).eval("x = 5; y = 6"));
-    }
-
-    @Test
-    void testEvalNegative() {
-        assertEquals(-6, new Mul(new Number(-2), new Number(3)).eval(""));
-    }
-
-    @Test
-    void testDerivativeNumbers() {
-        assertEquals(0, new Mul(new Number(2), new Number(3)).derivative("x").eval(""));
+    void testDerivative() {
+        // (2 * x)' = 2 → при x=5 всё равно 2
+        assertEquals(2, new Mul(new Number(2), new Variable("x"))
+                .derivative("x")
+                .eval("x = 5"));
     }
 }

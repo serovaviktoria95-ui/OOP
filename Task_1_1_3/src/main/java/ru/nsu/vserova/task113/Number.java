@@ -14,11 +14,11 @@ public class Number extends Expression {
     }
 
     /**
-     * Константа печатается как число.
+     * Возвращает строковое представление константы.
      */
     @Override
-    public void print() {
-        System.out.print(value);
+    public String toString() {
+        return Integer.toString(value);
     }
 
     /**

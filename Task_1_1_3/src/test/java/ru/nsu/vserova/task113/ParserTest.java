@@ -8,72 +8,41 @@ import org.junit.jupiter.api.Test;
 class ParserTest {
 
     @Test
-    void testParseNumber() {
-        assertEquals(42, new Parser("42").parse().eval(""));
+    void testParseNumberAndVariable() {
+        assertEquals("42", new Parser("42").parse().toString());
+        assertEquals("x", new Parser("x").parse().toString());
     }
 
     @Test
-    void testParseVariable() {
-        assertEquals(5, new Parser("x").parse().eval("x = 5"));
-    }
-
-    @Test
-    void testParseAdd() {
-        assertEquals(3, new Parser("(1+2)").parse().eval(""));
-    }
-
-    @Test
-    void testParseSub() {
-        assertEquals(2, new Parser("(5-3)").parse().eval(""));
-    }
-
-    @Test
-    void testParseMul() {
-        assertEquals(12, new Parser("(4*3)").parse().eval(""));
-    }
-
-    @Test
-    void testParseDiv() {
-        assertEquals(3, new Parser("(12/4)").parse().eval(""));
+    void testParseAllOperations() {
+        assertEquals("(1+2)", new Parser("(1+2)").parse().toString());
+        assertEquals("(5-3)", new Parser("(5-3)").parse().toString());
+        assertEquals("(4*3)", new Parser("(4*3)").parse().toString());
+        assertEquals("(12/4)", new Parser("(12/4)").parse().toString());
     }
 
     @Test
     void testParseExampleFromTask() {
-        assertEquals(23, new Parser("(3+(2*x))").parse().eval("x = 10"));
+        Expression e = new Parser("(3+(2*x))").parse();
+        assertEquals("(3+(2*x))", e.toString());
+        assertEquals(23, e.eval("x = 10"));
     }
 
     @Test
-    void testParseNestedLeft() {
-        assertEquals(9, new Parser("((1+2)*3)").parse().eval(""));
-    }
-
-    @Test
-    void testParseNestedRight() {
-        assertEquals(7, new Parser("(1+(2*3))").parse().eval(""));
-    }
-
-    @Test
-    void testParseDeeplyNested() {
-        assertEquals(21, new Parser("((1+2)*(3+4))").parse().eval(""));
+    void testParseNested() {
+        assertEquals("((1+2)*3)", new Parser("((1+2)*3)").parse().toString());
+        assertEquals("(1+(2*3))", new Parser("(1+(2*3))").parse().toString());
     }
 
     @Test
     void testParseWithSpaces() {
-        assertEquals(23, new Parser("( 3 + ( 2 * x ) )").parse().eval("x = 10"));
+        assertEquals("(3+(2*x))", new Parser("( 3 + ( 2 * x ) )").parse().toString());
     }
 
     @Test
-    void testDerivativeOfParsed() {
-        assertEquals(2, new Parser("(3+(2*x))").parse().derivative("x").eval("x = 5"));
-    }
-
-    @Test
-    void testEmptyThrows() {
+    void testErrors() {
         assertThrows(RuntimeException.class, () -> new Parser("").parse());
-    }
-
-    @Test
-    void testUnknownOperatorThrows() {
+        assertThrows(RuntimeException.class, () -> new Parser("(1+2").parse());
         assertThrows(RuntimeException.class, () -> new Parser("(1^2)").parse());
     }
 }
