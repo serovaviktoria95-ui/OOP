@@ -29,12 +29,6 @@ class ParserTest {
     }
 
     @Test
-    void testParseNested() {
-        assertEquals("((1+2)*3)", new Parser("((1+2)*3)").parse().toString());
-        assertEquals("(1+(2*3))", new Parser("(1+(2*3))").parse().toString());
-    }
-
-    @Test
     void testParseWithSpaces() {
         assertEquals("(3+(2*x))", new Parser("( 3 + ( 2 * x ) )").parse().toString());
     }

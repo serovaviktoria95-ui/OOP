@@ -35,11 +35,14 @@ class ExpressionTest {
 
     @Test
     void testPrint() {
-        assertEquals("(1+2)", capturePrint(new Add(new Number(1), new Number(2))));
+        assertEquals("(1+2)",
+                capturePrint(new Add(new Number(1), new Number(2))));
     }
 
     @Test
     void testPrintln() {
-        assertEquals("(1+2)" + System.lineSeparator(), capturePrintln(new Add(new Number(1), new Number(2))));
+        assertEquals("(1+2)"
+                + System.lineSeparator(), capturePrintln(new Add(new Number(1),
+                new Number(2))));
     }
 }
