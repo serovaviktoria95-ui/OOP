@@ -2,6 +2,7 @@ package ru.nsu.vserova.task113;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+
 import org.junit.jupiter.api.Test;
 
 class DivTest {
@@ -13,11 +14,13 @@ class DivTest {
 
     @Test
     void testDerivative() {
-        assertEquals(-2, new Div(new Number(2), new Variable("x")).derivative("x").eval("x = 1"));
+        assertEquals(-2, new Div(new Number(2),
+                new Variable("x")).derivative("x").eval("x = 1"));
     }
 
     @Test
     void testDivisionByZeroThrows() {
-        assertThrows(ArithmeticException.class, () -> new Div(new Number(5), new Number(0)).eval(""));
+        assertThrows(ArithmeticException.class,
+                () -> new Div(new Number(5), new Number(0)).eval(""));
     }
 }
