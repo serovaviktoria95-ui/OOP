@@ -12,7 +12,7 @@ public abstract class Expression {
 
     protected abstract int eval(Map<String, Integer> vars);
 
-    public final int eval(String expr){
+    public final int eval(String expr) {
         return eval(parseAssignments(expr));
     }
 
