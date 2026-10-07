@@ -6,6 +6,7 @@ package ru.nsu.vserova.task113;
  * <p>
  *     Нужен для того, чтобы не переписывать один и тот же код.
  *     Однако нельзя внести в Expression, тк эта часть не нужна потомкам Number и Variable.
+ *
  * </p>
  */
 public abstract class BinaryOperation extends Expression {

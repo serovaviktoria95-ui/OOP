@@ -1,5 +1,8 @@
 package ru.nsu.vserova.task113;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Абстрактный класс для выражений.
  */
@@ -7,7 +10,27 @@ public abstract class Expression {
 
     public abstract Expression derivative(String var);
 
-    public abstract int eval(String expr);
+    protected abstract int eval(Map<String, Integer> vars);
+
+    public final int eval(String expr){
+        return eval(parseAssignments(expr));
+    }
+
+    /**
+    * Разбирает строку имя=значение в таблицу значений.
+    */
+    private Map<String, Integer> parseAssignments(String s) {
+        Map<String, Integer> map = new HashMap<>();
+        for (String pair : s.split(";")) {
+            pair = pair.trim();
+            if (pair.isEmpty()) {
+                continue;
+            }
+            String[] p = pair.split("=");
+            map.put(p[0].trim(), Integer.parseInt(p[1].trim()));
+        }
+        return map;
+    }
 
     /**
      * Печать в консоль.

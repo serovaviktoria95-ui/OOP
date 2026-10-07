@@ -1,5 +1,7 @@
 package ru.nsu.vserova.task113;
 
+import java.util.Map;
+
 /**
  * Деление одного операнда на другой.
  */
@@ -40,10 +42,10 @@ public class Div extends BinaryOperation {
      * Вычисляет значение деления при заданном означивании переменных.
      */
     @Override
-    public int eval(String a) {
-        if (right.eval(a) == 0) {
+    protected int eval(Map<String, Integer> vars) {
+        if (right.eval(vars) == 0) {
             throw new ArithmeticException("На 0 делить нельзя!");
         }
-        return left.eval(a) / right.eval(a);
+        return left.eval(vars) / right.eval(vars);
     }
 }

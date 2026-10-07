@@ -1,5 +1,7 @@
 package ru.nsu.vserova.task113;
 
+import java.util.Map;
+
 /**
  * Класс для переменных (буквы в выражениях).
  */
@@ -36,20 +38,13 @@ public class Variable extends Expression {
     }
 
     /**
-     * Возвращает значение переменной.
+     * Ищет значение переменной в таблице имя=значение.
      */
     @Override
-    public int eval(String expr) {
-        for (String pair : expr.split(";")) {
-            pair = pair.trim();
-            if (pair.isEmpty()) {
-                continue;
-            }
-            String[] p = pair.split("=");
-            if (p[0].trim().equals(name)) {
-                return Integer.parseInt(p[1].trim());
-            }
+    protected int eval(Map<String, Integer> vars) {
+        if (!vars.containsKey(name)) {
+            throw new IllegalArgumentException("Переменная не задана: " + name);
         }
-        throw new IllegalArgumentException("Переменная не задана: " + name);
+        return vars.get(name);
     }
 }

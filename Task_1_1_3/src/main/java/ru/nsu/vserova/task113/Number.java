@@ -1,5 +1,7 @@
 package ru.nsu.vserova.task113;
 
+import java.util.Map;
+
 /**
  * Класс для констант (числа внутри выражения).
  */
@@ -33,7 +35,7 @@ public class Number extends Expression {
      * У константы значение - она сама.
      */
     @Override
-    public int eval(String expr) {
+    protected int eval(Map<String, Integer> vars) {
         return value;
     }
 }

@@ -1,5 +1,7 @@
 package ru.nsu.vserova.task113;
 
+import java.util.Map;
+
 /**
  * Сложение 2х выражений.
  */
@@ -35,7 +37,7 @@ public class Add extends BinaryOperation {
      * Вычисляет значение суммы при заданном означивании переменных.
      */
     @Override
-    public int eval(String a) {
-        return left.eval(a) + right.eval(a);
+    protected int eval(Map<String, Integer> vars) {
+        return left.eval(vars) + right.eval(vars);
     }
 }
