@@ -20,9 +20,8 @@ public class GraphIo {
     }
 
     /** Прочитать граф любого типа из файла. */
-    public static <I> void
-    readInto(Graph<I> g, String path, Function<String, I> parser)
-            throws IOException {
+    public static <I> void readInto(Graph<I> g, String path,
+                                    Function<String, I> parser) throws IOException {
         // try-with-resources, автоматическая очистка ресурсов
         try (BufferedReader br = Files.newBufferedReader(Path.of(path))) {
             g.clear(); // очищаем граф перед чтением

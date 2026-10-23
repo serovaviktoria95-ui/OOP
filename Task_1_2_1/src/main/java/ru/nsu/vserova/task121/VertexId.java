@@ -34,7 +34,7 @@ public class VertexId<I> {
      * Добавить вершину.
      *
      * @param vertex имя вершины
-     * @return индекс вершины.
+     * @return индекс вершины
      */
     public int add(I vertex) {
         if (vertexId.containsKey(vertex)) {
@@ -79,7 +79,8 @@ public class VertexId<I> {
     /**
      * Нужен, чтобы клиент не мог портить внутреннее состояние графа, если передавать сам vertices.
      *
-     * @return копия списка имен вершин.*/
+     * @return копия списка имен вершин
+     */
     public List<I> list() {
         return new ArrayList<>(vertices);
     }
