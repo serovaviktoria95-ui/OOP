@@ -16,9 +16,9 @@ public class Main {
         Graph<String> list = new AdjacencyList<>();
         Graph<String> incidence = new IncidenceMatrix<>();
 
-        GraphIO.readInto(matrix, file);
-        GraphIO.readInto(list, file);
-        GraphIO.readInto(incidence, file);
+        GraphIo.readInto(matrix, file);
+        GraphIo.readInto(list, file);
+        GraphIo.readInto(incidence, file);
 
         System.out.println("Матрица смежности: ");
         System.out.println(matrix);
@@ -34,8 +34,10 @@ public class Main {
         System.out.println("Отсортированный список смежности: " + sorter.sort(list));
         System.out.println("Отсортированная матрица инцидентности: " + sorter.sort(incidence));
 
-        System.out.println("Матрица смежности == список смежности: " + matrix.equals(list));
-        System.out.println("Матрица смежности == матрица инцидентности: " + matrix.equals(incidence));
+        System.out.println("Матрица смежности == список смежности: "
+                + matrix.equals(list));
+        System.out.println("Матрица смежности == матрица инцидентности: "
+                + matrix.equals(incidence));
 
         Graph<String> cyclic = new AdjacencyList<>();
         cyclic.addVertex("X");
@@ -64,7 +66,7 @@ public class Main {
         System.out.println(intGraph);
         System.out.println("Отсортированный граф: " + sorter.sort(intGraph));
 
-        GraphIO.writeFrom(matrix, "out.txt");
+        GraphIo.writeFrom(matrix, "out.txt");
         System.out.println("\nГраф записан в out.txt");
     }
 }

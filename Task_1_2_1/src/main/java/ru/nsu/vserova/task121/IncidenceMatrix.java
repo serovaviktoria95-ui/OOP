@@ -13,7 +13,7 @@ import java.util.Objects;
  * </p>
  */
 public class IncidenceMatrix<I> implements Graph<I> {
-    private VertexID<I> idx = new VertexID<>();
+    private VertexId<I> idx = new VertexId<>();
     private final List<int[]> edges = new ArrayList<>();
     private int[][] inc = new int[0][0];
     int vertexOut = 1;
@@ -45,7 +45,7 @@ public class IncidenceMatrix<I> implements Graph<I> {
         int k = idx.remove(vertex);
 
         // Удаляем также ребра, инцидентные этой вершине
-        for(int i = edges.size() - 1; i >=0; i--) {
+        for (int i = edges.size() - 1; i >=0; i--) {
             int[] e = edges.get(i);
             if (e[0] == k || e[1] == k) {
                 edges.remove(i);
@@ -53,8 +53,12 @@ public class IncidenceMatrix<I> implements Graph<I> {
         }
 
         for (int[] e : edges) {
-            if (e[0] > k) e[0]--;
-            if (e[1] > k) e[1]--;
+            if (e[0] > k) {
+                e[0]--;
+            }
+            if (e[1] > k) {
+                e[1]--;
+            }
         }
         rebuild();
     }
@@ -62,12 +66,12 @@ public class IncidenceMatrix<I> implements Graph<I> {
     /** Добавить ориентированное ребро. */
     @Override
     public void addEdge(I from, I to) {
-        int fromID = idx.id(from);
-        int toID = idx.id(to);
+        int fromId = idx.id(from);
+        int toId = idx.id(to);
 
         int[] edge = new int[2];
-        edge[0] = fromID;
-        edge[1] = toID;
+        edge[0] = fromId;
+        edge[1] = toId;
 
         edges.add(edge);
         rebuild();
@@ -76,13 +80,13 @@ public class IncidenceMatrix<I> implements Graph<I> {
     /** Удалить ориентированное ребро. */
     @Override
     public void removeEdge(I from, I to) {
-        int fromID = idx.id(from);
-        int toID = idx.id(to);
+        int fromId = idx.id(from);
+        int toId = idx.id(to);
 
         int found = -1;
         for (int i = 0; i < edges.size(); i++) {
             int[] edge = edges.get(i);
-            if (edge[0] == fromID && edge[1] == toID) {
+            if (edge[0] == fromId && edge[1] == toId) {
                 found = i;
                 break;
             }

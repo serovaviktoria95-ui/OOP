@@ -8,15 +8,15 @@ import java.util.Map;
 /**
 * Хранит соответствие имя вершины-индекс и упорядоченный список имен.
 */
-public class VertexID<I> {
-    private Map<I, Integer> vertexID = new LinkedHashMap<>();
+public class VertexId<I> {
+    private Map<I, Integer> vertexId = new LinkedHashMap<>();
     private List<I> vertices = new ArrayList<>();
 
     /**
      * Индекс вершины.
      */
     public int id(I vertex) {
-        Integer i = vertexID.get(vertex);
+        Integer i = vertexId.get(vertex);
         if (i == null) {
             throw new GraphException("Нет такой вершины: " + vertex);
         }
@@ -32,29 +32,33 @@ public class VertexID<I> {
 
     /**
      * Добавить вершину.
+     *
      * @param vertex
      * @return индекс вершины.
      */
     public int add(I vertex) {
-        if (vertexID.containsKey(vertex)) throw new GraphException("Вершина уже существует: " + vertex);
+        if (vertexId.containsKey(vertex)) {
+            throw new GraphException("Вершина уже существует: " + vertex);
+        }
         int i = vertices.size();
-        vertexID.put(vertex, i);
+        vertexId.put(vertex, i);
         vertices.add(vertex);
         return i;
     }
 
     /**
      * Удалить вершину.
+     *
      * @param vertex
      * @return индекс вершины
      */
     public int remove(I vertex) {
-        if (vertexID.containsKey(vertex)) {
+        if (vertexId.containsKey(vertex)) {
             int k = id(vertex);
             vertices.remove(k);
-            vertexID.remove(vertex);
+            vertexId.remove(vertex);
             for (int i = k; i < vertices.size(); i++) {
-                vertexID.put(vertices.get(i), i);
+                vertexId.put(vertices.get(i), i);
             }
             return k;
         } else {
@@ -69,11 +73,12 @@ public class VertexID<I> {
 
     public void clear() {
         vertices.clear();
-        vertexID.clear();
+        vertexId.clear();
     }
 
     /**
      * Нужен, чтобы клиент не мог портить внутреннее состояние графа, если передавать сам vertices.
+     *
      * @return копия списка имен вершин.*/
     public List<I> list() {
         return new ArrayList<>(vertices);

@@ -2,7 +2,6 @@ package ru.nsu.vserova.task121;
 
 import java.util.List;
 import java.util.function.Function;
-
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.io.BufferedReader;
@@ -12,8 +11,8 @@ import java.io.IOException;
 /**
  * Чтение/запись графа в фиксированном текстовом формате.
  */
-public class GraphIO {
-    private GraphIO() {}
+public class GraphIo {
+    private GraphIo() {}
 
     /** Для уже строковых графов. */
     public static void readInto(Graph<String> g, String path) throws IOException {
@@ -21,7 +20,9 @@ public class GraphIO {
     }
 
     /** Прочитать граф любого типа из файла. */
-    public static <I> void readInto(Graph<I> g, String path, Function<String, I> parser) throws IOException {
+    public static <I> void
+    readInto(Graph<I> g, String path, Function<String, I> parser)
+            throws IOException {
         // try-with-resources, автоматическая очистка ресурсов
         try (BufferedReader br = Files.newBufferedReader(Path.of(path))) {
             g.clear(); // очищаем граф перед чтением
@@ -29,7 +30,9 @@ public class GraphIO {
             String line;
             while ((line = br.readLine()) != null) {
                 line = line.trim();
-                if (line.isEmpty() || line.startsWith("#")) continue;
+                if (line.isEmpty() || line.startsWith("#")) {
+                    continue;
+                }
                 String[] p = line.split("\\s+");
                 if (first) {
                     for (String v : p) g.addVertex(parser.apply(v));

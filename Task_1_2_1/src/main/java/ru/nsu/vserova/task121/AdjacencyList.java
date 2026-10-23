@@ -8,7 +8,7 @@ import java.util.Objects;
  * Список смежности.
  */
 public class AdjacencyList<I> implements Graph<I> {
-    private VertexID<I> idx = new VertexID<>();
+    private VertexId<I> idx = new VertexId<>();
     private List<List<Integer>> adj = new ArrayList<>();
 
     /** Добавить вершину. */
@@ -26,8 +26,12 @@ public class AdjacencyList<I> implements Graph<I> {
         for (List<Integer> l : adj) {
             for (int i = l.size() - 1; i >= 0; i--) {
                 int x = l.get(i);
-                if (x == k) l.remove(i);
-                else if (x>k) l.set(i, x - 1);
+                if (x == k) {
+                    l.remove(i);
+                }
+                else if (x>k) {
+                    l.set(i, x - 1);
+                }
             }
         }
     }
@@ -41,12 +45,12 @@ public class AdjacencyList<I> implements Graph<I> {
     /** Удалить ориентированное ребро. */
     @Override
     public void removeEdge(I from, I to) {
-        int toID = idx.id(to);
-        int fromID = idx.id(from);
+        int toId = idx.id(to);
+        int fromId = idx.id(from);
 
-        List<Integer> neighbours = adj.get(fromID);
+        List<Integer> neighbours = adj.get(fromId);
 
-        neighbours.remove(Integer.valueOf(toID));
+        neighbours.remove(Integer.valueOf(toId));
     }
 
     /** Получить список соседей вершины. */

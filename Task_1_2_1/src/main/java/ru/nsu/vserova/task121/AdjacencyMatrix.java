@@ -8,7 +8,7 @@ import java.util.Objects;
  * Матрица смежности.
  */
 public class AdjacencyMatrix<I> implements Graph<I> {
-    private VertexID<I> idx = new VertexID<>();
+    private VertexId<I> idx = new VertexId<>();
     private boolean[][] matrix = new boolean[0][0];
 
     /** Добавить вершину. */
@@ -33,10 +33,14 @@ public class AdjacencyMatrix<I> implements Graph<I> {
 
         int row = 0;
         for (int i = 0; i < n; i++) {
-            if (i == k) continue;
+            if (i == k) {
+                continue;
+            }
             int col = 0;
             for (int j = 0; j < n; j++) {
-                if (j == k) continue;
+                if (j == k) {
+                    continue;
+                }
                 m[row][col++] = matrix[i][j];
             }
             row++;

@@ -4,9 +4,11 @@ import org.junit.jupiter.api.Test;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class GraphIOTest {
+
+class GraphIoTest {
 
     @Test
     void readStringGraphTest() throws IOException {
@@ -14,7 +16,7 @@ class GraphIOTest {
         Files.writeString(temp, "A B C\nA B\nB C\n");
 
         Graph<String> g = new AdjacencyList<>();
-        GraphIO.readInto(g, temp.toString());
+        GraphIo.readInto(g, temp.toString());
 
         assertEquals(3, g.vertexCnt());
         assertEquals(2, g.getEdges().size());
@@ -28,7 +30,7 @@ class GraphIOTest {
         Files.writeString(temp, "10 20\n10 20\n");
 
         Graph<Integer> g = new AdjacencyMatrix<>();
-        GraphIO.readInto(g, temp.toString(), Integer::parseInt);
+        GraphIo.readInto(g, temp.toString(), Integer::parseInt);
 
         assertEquals(2, g.vertexCnt());
         assertTrue(g.getNeighbours(10).contains(20));
@@ -44,7 +46,7 @@ class GraphIOTest {
         g.addEdge("A", "B");
 
         Path temp = Path.of("temp_out.txt");
-        GraphIO.writeFrom(g, temp.toString());
+        GraphIo.writeFrom(g, temp.toString());
 
         assertTrue(Files.exists(temp));
         String content = Files.readString(temp);

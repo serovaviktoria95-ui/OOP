@@ -1,13 +1,14 @@
 package ru.nsu.vserova.task121;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
-class VertexIDTest {
+class VertexIdTest {
 
     @Test
     void addAndIdTest() {
-        VertexID<String> idx = new VertexID<>();
+        VertexId<String> idx = new VertexId<>();
         int i = idx.add("A");
         assertEquals(0, i);
         assertEquals(0, idx.id("A"));
@@ -15,7 +16,7 @@ class VertexIDTest {
 
     @Test
     void removeTest() {
-        VertexID<String> idx = new VertexID<>();
+        VertexId<String> idx = new VertexId<>();
         idx.add("A");
         idx.add("B");
         idx.remove("A");
@@ -25,14 +26,14 @@ class VertexIDTest {
 
     @Test
     void nameTest() {
-        VertexID<Integer> idx = new VertexID<>();
+        VertexId<Integer> idx = new VertexId<>();
         idx.add(100);
         assertEquals(100, idx.name(0));
     }
 
     @Test
     void missingIdThrowsTest() {
-        VertexID<String> idx = new VertexID<>();
+        VertexId<String> idx = new VertexId<>();
         assertThrows(GraphException.class, () -> idx.id("X"));
     }
 }
