@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
-* Хранит соответствие имя вершины-индекс и упорядоченный список имен.
-*/
+ * Хранит соответствие имя вершины-индекс и упорядоченный список имен.
+ */
 public class VertexId<I> {
     private Map<I, Integer> vertexId = new LinkedHashMap<>();
     private List<I> vertices = new ArrayList<>();

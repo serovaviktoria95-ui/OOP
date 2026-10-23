@@ -7,17 +7,16 @@ import java.util.Objects;
 /**
  * Матрица инцидентности.
  *
- * <p>
- *     Строки - вершины, столбцы - ребра
- *     -1 - ребро входит в вершину, 1 - выходит
+ * <p>Строки - вершины, столбцы - ребра
+ * -1 - ребро входит в вершину, 1 - выходит
  * </p>
  */
 public class IncidenceMatrix<I> implements Graph<I> {
     private VertexId<I> idx = new VertexId<>();
     private final List<int[]> edges = new ArrayList<>();
     private int[][] inc = new int[0][0];
-    int vertexOut = 1;
-    int vertexIn = -1;
+    final int vertexOut = 1;
+    final int vertexIn = -1;
 
     /**
      * Пересобрать матрицу инцидентности по списку ребер.
