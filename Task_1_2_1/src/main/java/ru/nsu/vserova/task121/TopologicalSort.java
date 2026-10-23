@@ -37,7 +37,7 @@ public class TopologicalSort {
 
         // Удаляем вершины и уменьшаем степени соседей.
         List<I> order = new ArrayList<>();
-        while(!queue.isEmpty()) {
+        while (!queue.isEmpty()) {
             I vertex = queue.poll();
             order.add(vertex);
 

@@ -1,12 +1,12 @@
 package ru.nsu.vserova.task121;
 
-import java.util.List;
-import java.util.function.Function;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.List;
+import java.util.function.Function;
 
 /**
  * Чтение/запись графа в фиксированном текстовом формате.
@@ -35,7 +35,9 @@ public class GraphIo {
                 }
                 String[] p = line.split("\\s+");
                 if (first) {
-                    for (String v : p) g.addVertex(parser.apply(v));
+                    for (String v : p) {
+                        g.addVertex(parser.apply(v));
+                    }
                     first = false;
                 } else {
                     if (p.length != 2) {

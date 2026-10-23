@@ -3,6 +3,7 @@ package ru.nsu.vserova.task121;
 import java.util.HashSet;
 import java.util.Set;
 
+/** Утилитарные операции над графами. */
 public class Operations {
 
     /** Сравнение по содержимому. */

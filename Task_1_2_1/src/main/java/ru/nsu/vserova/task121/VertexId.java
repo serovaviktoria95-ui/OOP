@@ -33,7 +33,7 @@ public class VertexId<I> {
     /**
      * Добавить вершину.
      *
-     * @param vertex
+     * @param vertex имя вершины
      * @return индекс вершины.
      */
     public int add(I vertex) {
@@ -49,7 +49,7 @@ public class VertexId<I> {
     /**
      * Удалить вершину.
      *
-     * @param vertex
+     * @param vertex имя вершины
      * @return индекс вершины
      */
     public int remove(I vertex) {

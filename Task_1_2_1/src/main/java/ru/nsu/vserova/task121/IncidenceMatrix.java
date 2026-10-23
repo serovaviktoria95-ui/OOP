@@ -6,8 +6,8 @@ import java.util.Objects;
 
 /**
  * Матрица инцидентности.
- * <p>
  *
+ * <p>
  *     Строки - вершины, столбцы - ребра
  *     -1 - ребро входит в вершину, 1 - выходит
  * </p>
@@ -45,7 +45,7 @@ public class IncidenceMatrix<I> implements Graph<I> {
         int k = idx.remove(vertex);
 
         // Удаляем также ребра, инцидентные этой вершине
-        for (int i = edges.size() - 1; i >=0; i--) {
+        for (int i = edges.size() - 1; i >= 0; i--) {
             int[] e = edges.get(i);
             if (e[0] == k || e[1] == k) {
                 edges.remove(i);

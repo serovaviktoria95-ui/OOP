@@ -29,7 +29,7 @@ public class AdjacencyList<I> implements Graph<I> {
                 if (x == k) {
                     l.remove(i);
                 }
-                else if (x>k) {
+                else if (x > k) {
                     l.set(i, x - 1);
                 }
             }
