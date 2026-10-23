@@ -2,6 +2,7 @@ package ru.nsu.vserova.task121;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Список смежности.
@@ -10,12 +11,14 @@ public class AdjacencyList<I> implements Graph<I> {
     private VertexID<I> idx = new VertexID<>();
     private List<List<Integer>> adj = new ArrayList<>();
 
+    /** Добавить вершину. */
     @Override
     public void addVertex(I vertex) {
         idx.add(vertex);
         adj.add(new ArrayList<>());
     }
 
+    /** Удалить вершину. */
     @Override
     public void removeVertex(I vertex) {
         int k = idx.remove(vertex);
@@ -29,14 +32,13 @@ public class AdjacencyList<I> implements Graph<I> {
         }
     }
 
+    /** Добавить ориентированное ребро. */
     @Override
     public void addEdge(I from, I to) {
         adj.get(idx.id(from)).add(idx.id(to));
     }
 
-    /**
-     * Удаляет ориентированное ребро.
-     */
+    /** Удалить ориентированное ребро. */
     @Override
     public void removeEdge(I from, I to) {
         int toID = idx.id(to);
@@ -47,6 +49,7 @@ public class AdjacencyList<I> implements Graph<I> {
         neighbours.remove(Integer.valueOf(toID));
     }
 
+    /** Получить список соседей вершины. */
     @Override
     public List<I> getNeighbours(I vertex) {
         List<I> res = new ArrayList<>();
@@ -56,41 +59,53 @@ public class AdjacencyList<I> implements Graph<I> {
         return res;
     }
 
+    /** Очистить граф. */
     @Override
     public void clear() {
         idx.clear();
         adj.clear();
     }
 
+    /** Список всех ребер графа. */
     @Override
-    public List<I[]> getEdges() {
-        List<I[]> res = new ArrayList<>();
+    public List<List<I>> getEdges() {
+        List<List<I>> res = new ArrayList<>();
         for (int i = 0; i < adj.size(); i++) {
             for (int j : adj.get(i)) {
-                I[] pair = (I[]) new Object[2];
-                pair[0] = idx.name(i);
-                pair[1] = idx.name(j);
+                List<I> pair = new ArrayList<>();
+                pair.add(idx.name(i));
+                pair.add(idx.name(j));
                 res.add(pair);
             }
         }
         return res;
     }
 
+    /** Список всех вершин графа. */
     @Override
     public List<I> getVertices() {
         return idx.list();
     }
 
+    /** Количество вершин в графе. */
     @Override
     public int vertexCnt() {
         return idx.size();
     }
 
+    /** Сравнить граф с другим по содержимому. */
     @Override
     public boolean equals(Object o) {
         return o instanceof Graph && Operations.equal(this, (Graph<I>) o);
     }
 
+    /** Хэшкод на основе вершин. */
+    @Override
+    public int hashCode() {
+        return Objects.hash(getVertices());
+    }
+
+    /** Возвращает строковое представление графа в виде списка. */
     @Override
     public String toString() {
         return Operations.toString(this);

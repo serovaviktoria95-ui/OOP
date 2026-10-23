@@ -22,6 +22,7 @@ public class VertexID<I> {
         }
         return i;
     }
+
     /**
      * Количество вершин.
      */

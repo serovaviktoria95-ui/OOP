@@ -4,8 +4,10 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
+/** Входная точка. */
 public class Main {
 
+    /** Запуск программы. */
     public static void main(String[] args) throws IOException {
         String file = "graph.txt";
         Files.writeString(Path.of(file), "A B C D\n" + "A B\n A C\n D C\n");

@@ -1,5 +1,8 @@
 package ru.nsu.vserova.task121;
 
+import java.util.List;
+import java.util.function.Function;
+
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.io.BufferedReader;
@@ -12,7 +15,13 @@ import java.io.IOException;
 public class GraphIO {
     private GraphIO() {}
 
+    /** Для уже строковых графов. */
     public static void readInto(Graph<String> g, String path) throws IOException {
+        readInto(g, path, s -> s);
+    }
+
+    /** Прочитать граф любого типа из файла. */
+    public static <I> void readInto(Graph<I> g, String path, Function<String, I> parser) throws IOException {
         // try-with-resources, автоматическая очистка ресурсов
         try (BufferedReader br = Files.newBufferedReader(Path.of(path))) {
             g.clear(); // очищаем граф перед чтением
@@ -23,26 +32,27 @@ public class GraphIO {
                 if (line.isEmpty() || line.startsWith("#")) continue;
                 String[] p = line.split("\\s+");
                 if (first) {
-                    for (String v : p) g.addVertex(v);
+                    for (String v : p) g.addVertex(parser.apply(v));
                     first = false;
                 } else {
                     if (p.length != 2) {
                         throw new IOException("Ожидается 'from to': " + line);
                     }
-                    g.addEdge(p[0], p[1]);
+                    g.addEdge(parser.apply(p[0]), parser.apply(p[1]));
                 }
             }
         }
     }
 
+    /** Записать строковый граф в файл. */
     public static void writeFrom(Graph<String> g, String path) throws IOException {
         try (BufferedWriter bw = Files.newBufferedWriter(Path.of(path))) {
             bw.write(String.join(" ", g.getVertices()));
             bw.newLine();
-            for (Object[] e : g.getEdges()) {
-                bw.write((String) e[0]);
+            for (List<String> e : g.getEdges()) {
+                bw.write(e.get(0));
                 bw.write(' ');
-                bw.write((String) e[1]);
+                bw.write(e.get(1));
                 bw.newLine();
             }
         }

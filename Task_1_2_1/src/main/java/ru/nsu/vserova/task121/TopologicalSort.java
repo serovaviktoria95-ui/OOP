@@ -12,16 +12,18 @@ import java.util.Map;
  * Алгоритм Кана.
  */
 public class TopologicalSort {
+
+    /** Отсортировать вершины графа так, чтобы все стрелки шли слева направо. */
     public <I> List<I> sort(Graph<I> g) {
-        // Всем входящую степень 0.
         Map<I, Integer> degree = new HashMap<>();
+        // Всем входящую степень 0.
         for (I vertex : g.getVertices()) {
             degree.put(vertex, 0);
         }
 
         // Для каждого ребра степень вхождения увеличить на 1.
-        for (I[] e : g.getEdges()) {
-            I to = e[1];
+        for (List<I> e : g.getEdges()) {
+            I to = e.get(1);
             degree.put(to, degree.get(to) + 1);
         }
 

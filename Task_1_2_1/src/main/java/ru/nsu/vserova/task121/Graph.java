@@ -2,21 +2,32 @@ package ru.nsu.vserova.task121;
 
 import java.util.List;
 
+/** Интерфейс с операциями. */
 public interface Graph<I> {
-    // 1. добавление и удаление вершины;
+    /** Добавить вершину. */
     void addVertex(I vertex);
+
+    /** Удалить вершину. */
     void removeVertex(I vertex);
 
-    // 2. добавление и удаление ребра;
+    /** Добавить ориентированное ребро. */
     void addEdge(I from, I to);
+
+    /** Удалить ориентированное ребро. */
     void removeEdge(I from, I to);
 
-    // 3. получение списка всех “соседей” вершины;
+    /** Получить список всех соседей вершины. */
     List<I> getNeighbours(I vertex);
 
-    // доп.функции
+    /** Очистить граф. */
     void clear();
-    List<I[]> getEdges();
+
+    /** Получить список всех ребер графа. */
+    List<List<I>> getEdges();
+
+    /** Получить список всех вершин графа. */
     List<I> getVertices();
+
+    /** Получить количество вершин. */
     int vertexCnt();
 }
