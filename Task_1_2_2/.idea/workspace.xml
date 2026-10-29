@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2ed94c76-8b16-4ddc-9d87-f459f47a8655" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Task_1_1_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1_2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task_1_1_2/src/main/java/ru/nsu/vserova/task112/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1_2/src/main/java/ru/nsu/vserova/task112/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task_1_1_2/src/main/java/ru/nsu/vserova/task112/Gamer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1_2/src/main/java/ru/nsu/vserova/task112/Gamer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task_1_1_2/src/test/java/ru/nsu/vserova/task112/DealerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1_2/src/test/java/ru/nsu/vserova/task112/DealerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task_1_1_2/src/test/java/ru/nsu/vserova/task112/GamerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1_2/src/test/java/ru/nsu/vserova/task112/GamerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/vserova/task122/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/vserova/task122/Entry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/vserova/task122/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/vserova/task122/HashTable.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3LLoMVJ7mjmdKsCwz4WiUfkaTRh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build Task_1_2_2.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Task_1_2_2 [:ru.nsu.vserova.task122.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EntryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HashTableTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.NodeTest.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;task-1-2-2&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Виктория/OOP/Task_1_2_2/src/main/java/ru/nsu/vserova/Task_1_1_1/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ru.nsu.vserova.task122" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.EntryTest">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.nsu.vserova.task122.Main" />
+      <module name="Task_1_2_2.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.nsu.vserova.task122.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EntryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Task_1_2_2.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.nsu.vserova.task122.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.nsu.vserova.task122" />
+      <option name="MAIN_CLASS_NAME" value="ru.nsu.vserova.task122.EntryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashTableTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Task_1_2_2.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.nsu.vserova.task122.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.nsu.vserova.task122" />
+      <option name="MAIN_CLASS_NAME" value="ru.nsu.vserova.task122.HashTableTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Task_1_2_2.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.nsu.vserova.task122.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.nsu.vserova.task122" />
+      <option name="MAIN_CLASS_NAME" value="ru.nsu.vserova.task122.NodeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.EntryTest" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.HashTableTest" />
+        <item itemvalue="JUnit.NodeTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10315.125" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10315.125" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ed94c76-8b16-4ddc-9d87-f459f47a8655" name="Changes" comment="" />
+      <created>1793242665978</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1793242665978</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/nsu/vserova/task122/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Task_1_2_2$HashTableTest.ic" NAME="HashTableTest Coverage Results" MODIFIED="1793290345284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ru.nsu.vserova.task122.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Task_1_2_2$NodeTest.ic" NAME="NodeTest Coverage Results" MODIFIED="1793289947831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ru.nsu.vserova.task122.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Task_1_2_2$EntryTest.ic" NAME="EntryTest Coverage Results" MODIFIED="1793289832716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ru.nsu.vserova.task122.*</FILTER>
+    </SUITE>
+  </component>
+</project>
