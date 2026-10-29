@@ -1,9 +1,12 @@
 package ru.nsu.vserova.task122;
 
-import java.util.*;
+import java.util.ConcurrentModificationException;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+import java.util.Objects;
 
 /** Собственная реализация хэш-таблицы. */
-public class HashTable<K,V> implements Iterable<Entry<K, V>> {
+public class HashTable<K, V> implements Iterable<Entry<K, V>> {
 
     private Node<K, V>[] table;
     private int modCnt;
@@ -108,7 +111,8 @@ public class HashTable<K,V> implements Iterable<Entry<K, V>> {
 
     /** Внутренний класс итератора. */
     private class HashTableIterator implements Iterator<Entry<K, V>> {
-        private int expectedModCnt = modCnt; // заводим переменную, чтобы ловить ConcurrentModificationException
+        private int expectedModCnt = modCnt; // заводим переменную,
+        // чтобы ловить ConcurrentModificationException
         private int curIndex = 0;
         private Node<K, V> curNode = null;
         private Node<K, V> nextNode = null;

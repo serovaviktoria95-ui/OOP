@@ -38,8 +38,12 @@ class Entry<K, V> {
     /** Сравнить два поля одной ячейки. */
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Entry<?, ?> entry = (Entry<?,?>) o;
         return Objects.equals(key, entry.key) && Objects.equals(value, entry.value);
     }
