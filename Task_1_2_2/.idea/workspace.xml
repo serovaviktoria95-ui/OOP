@@ -10,6 +10,20 @@
       <change beforePath="$PROJECT_DIR$/../Task_1_1_2/src/main/java/ru/nsu/vserova/task112/Gamer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1_2/src/main/java/ru/nsu/vserova/task112/Gamer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Task_1_1_2/src/test/java/ru/nsu/vserova/task112/DealerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1_2/src/test/java/ru/nsu/vserova/task112/DealerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Task_1_1_2/src/test/java/ru/nsu/vserova/task112/GamerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1_2/src/test/java/ru/nsu/vserova/task112/GamerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.6.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.6.0/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.6.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.6.0/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.6.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.6.0/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.6.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.6.0/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.6.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.6.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Entry.class.uniqueId2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/HashTable$HashTableIterator.class.uniqueId1" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/HashTable$HashTableIterator.class.uniqueId1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/HashTable.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/HashTable.class.uniqueId0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Main.class.uniqueId3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Node.class.uniqueId4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/compileTransaction/stash-dir/HashTableTest.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/vserova/task122/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/vserova/task122/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +61,7 @@
     "Gradle.Build Task_1_2_2.executor": "Run",
     "Gradle.Task_1_2_2 [:ru.nsu.vserova.task122.Main.main()].executor": "Run",
     "JUnit.EntryTest.executor": "Run",
-    "JUnit.HashTableTest.executor": "Coverage",
+    "JUnit.HashTableTest.executor": "Run",
     "JUnit.NodeTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -72,7 +86,20 @@
       <recent name="ru.nsu.vserova.task122" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HashTableTest">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.nsu.vserova.task122.Main" />
+      <module name="Task_1_2_2.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.nsu.vserova.task122.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EntryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Task_1_2_2.test" />
       <extension name="coverage">
@@ -120,6 +147,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.HashTableTest" />
         <item itemvalue="JUnit.NodeTest" />
         <item itemvalue="JUnit.EntryTest" />

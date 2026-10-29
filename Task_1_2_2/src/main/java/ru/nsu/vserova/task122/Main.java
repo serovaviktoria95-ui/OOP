@@ -2,6 +2,7 @@ package ru.nsu.vserova.task122;
 
 /** Точка входа. */
 public class Main {
+    /** Тесты из задания. */
     public static void main(String[] args) {
         HashTable<String, Number> hashTable = new HashTable<>();
         hashTable.put("one", 1);
