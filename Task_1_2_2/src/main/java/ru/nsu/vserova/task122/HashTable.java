@@ -21,7 +21,9 @@ public class HashTable<K, V> implements Iterable<Entry<K, V>> {
 
     /** Вычисление хэша по ключу. */
     private int hash(K key) {
-        if (key == null) return 0;
+        if (key == null) {
+            return 0;
+        }
         return Math.abs(key.hashCode() % table.length);
     }
 
@@ -127,7 +129,7 @@ public class HashTable<K, V> implements Iterable<Entry<K, V>> {
                 return true;
             }
 
-            for (int i = curIndex; i< table.length; i++) {
+            for (int i = curIndex; i < table.length; i++) {
                 if (table[i] != null) {
                     nextNode = table[i];
                     curIndex = i + 1;
@@ -179,13 +181,13 @@ public class HashTable<K, V> implements Iterable<Entry<K, V>> {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-        HashTable<?, ?> another = (HashTable<?, ?>) o; // приводим к одному типу, чтобы иметь доступ к size
+        HashTable<?, ?> another = (HashTable<?, ?>) o;
         if (size != another.size) {
             return false;
         }
         for (Entry<K, V> entry : this) {
             Object anotherValue = another.getValueByObject(entry.getKey());
-            if (anotherValue == null || !Objects.equals(entry.getValue(),anotherValue)) {
+            if (anotherValue == null || !Objects.equals(entry.getValue(), anotherValue)) {
                 return false;
             }
         }

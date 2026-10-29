@@ -44,7 +44,7 @@ class Entry<K, V> {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-        Entry<?, ?> entry = (Entry<?,?>) o;
+        Entry<?, ?> entry = (Entry<?, ?>) o;
         return Objects.equals(key, entry.key) && Objects.equals(value, entry.value);
     }
 

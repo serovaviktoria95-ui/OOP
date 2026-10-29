@@ -10,26 +10,8 @@
       <change beforePath="$PROJECT_DIR$/../Task_1_1_2/src/main/java/ru/nsu/vserova/task112/Gamer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1_2/src/main/java/ru/nsu/vserova/task112/Gamer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Task_1_1_2/src/test/java/ru/nsu/vserova/task112/DealerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1_2/src/test/java/ru/nsu/vserova/task112/DealerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Task_1_1_2/src/test/java/ru/nsu/vserova/task112/GamerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task_1_1_2/src/test/java/ru/nsu/vserova/task112/GamerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.6.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.6.0/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.6.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.6.0/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.6.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.6.0/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.6.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.6.0/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.6.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.6.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/nsu/vserova/task122/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ru/nsu/vserova/task122/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/nsu/vserova/task122/HashTableTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/nsu/vserova/task122/HashTableTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/HashTable$HashTableIterator.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/HashTable.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/vserova/task122/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/vserova/task122/Entry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/vserova/task122/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/vserova/task122/HashTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/vserova/task122/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/vserova/task122/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/task122/EntryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/task122/EntryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/task122/HashTableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/task122/HashTableTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/task122/NodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/nsu/vserova/task122/NodeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
