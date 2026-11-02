@@ -11,6 +11,7 @@ public class HashTable<K, V> implements Iterable<Entry<K, V>> {
     private Node<K, V>[] table;
     private int modCnt;
     private int size;
+    private static final float DEFAULT_LOAD_FACTOR = 0.75f;
 
     /** 1. cоздание пустой хеш-таблицы. */
     public HashTable() {
@@ -43,6 +44,10 @@ public class HashTable<K, V> implements Iterable<Entry<K, V>> {
         table[index] = new Node<>(key, value, table[index]);
         size++;
         modCnt++;
+
+        if (size > table.length * DEFAULT_LOAD_FACTOR) {
+            resize();
+        }
     }
 
     /** 3. удаление пары ключ-значение (k, v). */
@@ -212,5 +217,27 @@ public class HashTable<K, V> implements Iterable<Entry<K, V>> {
             }
         }
         return sb.append(" }").toString();
+    }
+
+    /** Перестройка HashMap при ее заполнении. */
+    private void resize() {
+        Node<K, V>[] oldTable = table;
+        table = (Node<K, V>[]) new Node[oldTable.length * 2];
+        size = 0;
+
+        for (Node<K, V> head : oldTable) {
+            Node<K, V> cur = head;
+            while( cur != null) {
+                Node<K, V> next = cur.next;
+                cur.next = null;
+
+                int idx = hash(cur.getKey());
+                cur.next = table[idx];
+                table[idx] = cur;
+                size++;
+
+                cur = next;
+            }
+        }
     }
 }
