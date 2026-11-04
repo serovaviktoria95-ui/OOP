@@ -3,6 +3,7 @@ package ru.nsu.vserova.task122;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -127,5 +128,25 @@ class HashTableTest {
                 }
             }
         });
+    }
+
+    @Test
+    void testResize() {
+        HashTable<Integer, String> table = new HashTable<>();
+
+        for (int i = 1; i <= 20; i++) {
+            table.put(i, "Value" + i);
+        }
+
+        for (int i = 1; i <= 20; i++) {
+            assertEquals("Value" + i, table.get(i));
+        }
+
+        int count = 0;
+        for (Entry<Integer, String> entry : table) {
+            assertNotNull(entry);
+            count++;
+        }
+        assertEquals(20, count);
     }
 }

@@ -227,7 +227,7 @@ public class HashTable<K, V> implements Iterable<Entry<K, V>> {
 
         for (Node<K, V> head : oldTable) {
             Node<K, V> cur = head;
-            while( cur != null) {
+            while (cur != null) {
                 Node<K, V> next = cur.next;
                 cur.next = null;
 
