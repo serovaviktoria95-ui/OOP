@@ -8,7 +8,6 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
-
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 
@@ -51,7 +50,8 @@ class SubstringSearcherTest {
 
         // формируем команду для запуска дочерней JVM с лимитом памяти 64 мб
         // файл ~250МБ > кучи (64МБ)
-        String javaBin = Path.of(System.getProperty("java.home"), "bin", "java").toString();
+        String javaBin = Path.of(System.getProperty("java.home"),
+                "bin", "java").toString();
         String classPath = System.getProperty("java.class.path");
 
         ProcessBuilder pb = new ProcessBuilder(
@@ -71,7 +71,8 @@ class SubstringSearcherTest {
         int exitCode = process.waitFor();
 
         assertEquals(0, exitCode, "OutOfMemoryError:" + output);
-        assertTrue(output.contains("SUCCESS_FOUND_1"), "Pattern was not found: " + output);
+        assertTrue(output.contains("SUCCESS_FOUND_1"),
+                "Pattern was not found: " + output);
 
         Files.deleteIfExists(bigFile);
     }
