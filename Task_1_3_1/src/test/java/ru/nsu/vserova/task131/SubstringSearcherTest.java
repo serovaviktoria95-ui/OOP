@@ -76,4 +76,11 @@ class SubstringSearcherTest {
 
         Files.deleteIfExists(bigFile);
     }
+
+    @Test
+    void findsNonAscii() throws IOException {
+        Path f = tmp.resolve("utf8.txt");
+        Files.writeString(f, "Привет, мир!", StandardCharsets.UTF_8);
+        assertEquals(List.of(0L), SubstringSearcher.find(f, "Привет"));
+    }
 }
