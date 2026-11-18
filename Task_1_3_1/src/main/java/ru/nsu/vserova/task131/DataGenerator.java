@@ -10,7 +10,8 @@ import java.util.Random;
 /** Генератор больших тестовых файлов. */
 public class DataGenerator {
     /** Записывает файл случайные символы из указанного алфавита в кодировке UTF8. */
-    public static Path generate(Path target, long chars, String alph, long seed) throws IOException {
+    public static Path generate(Path target, long chars, String alph, long seed)
+            throws IOException {
         if (alph.isEmpty()) {
             throw new IllegalArgumentException("Alphabet must be not empty");
         }
