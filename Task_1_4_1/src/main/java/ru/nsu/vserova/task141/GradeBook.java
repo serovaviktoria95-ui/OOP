@@ -48,7 +48,7 @@ public class GradeBook {
         if (cnt == 0) {
             return 0;
         }
-        return (double)sum / cnt;
+        return (double) sum / cnt;
     }
 
     /** Возможность перевода с платной основы на бюджетную. */
@@ -64,9 +64,10 @@ public class GradeBook {
                 continue;
             }
 
-            for (GradeRecord record: semester.getRecords()) {
+            for (GradeRecord record : semester.getRecords()) {
                 if (record.getExamType() == ExamType.EXAM) {
-                    if (record.getGrade() == Grades.SATISFIED || record.getGrade() == Grades.UNSATISFIED) {
+                    if (record.getGrade() == Grades.SATISFIED
+                            || record.getGrade() == Grades.UNSATISFIED) {
                         return false;
                     }
                 }
@@ -93,8 +94,8 @@ public class GradeBook {
         for (Semester semester : semesters) {
             for (GradeRecord record : semester.getRecords()) {
                 Grades grade = record.getGrade();
-                if (record.getExamType() == ExamType.QUALIFYING_WORK &&
-                        (grade != Grades.EXCELLENT && grade != null)) {
+                if (record.getExamType() == ExamType.QUALIFYING_WORK
+                        && (grade != Grades.EXCELLENT && grade != null)) {
                     return false;
                 }
 
@@ -123,10 +124,7 @@ public class GradeBook {
         if (cnt == 0) {
             return false;
         }
-        if ((double)(excellent + remaining) / cnt >= 0.75) {
-            return true;
-        }
-        return false;
+        return (double) (excellent + remaining) / cnt >= 0.75;
     }
 
     /** Возможность получения повышенной стипендии. */
@@ -135,7 +133,7 @@ public class GradeBook {
             return false;
         }
         for (Semester semester : semesters) {
-            if (semester.getNum() != currentSemester - 1){
+            if (semester.getNum() != currentSemester - 1) {
                 continue;
             }
             if (!semester.isCompleted()) {

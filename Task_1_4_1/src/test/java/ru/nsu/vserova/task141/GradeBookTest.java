@@ -1,10 +1,10 @@
 package ru.nsu.vserova.task141;
 
-import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import org.junit.jupiter.api.Test;
 
 class GradeBookTest {
 
@@ -85,7 +85,7 @@ class GradeBookTest {
 
     @Test
     void testHonorDiplomaForecast() {
-        GradeBook book = new GradeBook(FinancialType.BUDGET);
+        final GradeBook book = new GradeBook(FinancialType.BUDGET);
 
         Semester first = new Semester(1);
         first.addRecord(new GradeRecord(

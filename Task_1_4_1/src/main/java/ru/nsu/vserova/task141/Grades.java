@@ -11,14 +11,17 @@ public enum Grades {
 
     private final Integer value;
 
+    /** Создать оценку с числовым значением. */
     Grades(Integer value) {
         this.value = value;
     }
 
+    /** Возвращает цифровое значение оценки. */
     public Integer getValue() {
         return value;
     }
 
+    /** Является ли оценка числом. */
     public boolean isNumeric() {
         return value != null;
     }
