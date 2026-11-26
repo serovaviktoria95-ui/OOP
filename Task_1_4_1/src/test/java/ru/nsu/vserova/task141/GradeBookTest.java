@@ -10,7 +10,7 @@ class GradeBookTest {
 
     @Test
     void testAverageGrade() {
-        GradeBook book = new GradeBook(FinancialType.BUDGET);
+        final GradeBook book = new GradeBook(FinancialType.BUDGET);
         Semester semester = new Semester(1);
 
         semester.addRecord(new GradeRecord(
@@ -29,7 +29,7 @@ class GradeBookTest {
 
     @Test
     void testCanChangeFinancialType() {
-        GradeBook book = new GradeBook(FinancialType.PAID);
+        final GradeBook book = new GradeBook(FinancialType.PAID);
 
         Semester first = new Semester(1);
         first.addRecord(new GradeRecord(
@@ -50,7 +50,7 @@ class GradeBookTest {
 
     @Test
     void testCanGetHonorDiploma() {
-        GradeBook book = new GradeBook(FinancialType.BUDGET);
+        final GradeBook book = new GradeBook(FinancialType.BUDGET);
         Semester semester = new Semester(8);
 
         semester.addRecord(new GradeRecord(
@@ -72,7 +72,7 @@ class GradeBookTest {
 
     @Test
     void testHonorDiplomaWithSatisfiedGrade() {
-        GradeBook book = new GradeBook(FinancialType.BUDGET);
+        final GradeBook book = new GradeBook(FinancialType.BUDGET);
         Semester semester = new Semester(1);
 
         semester.addRecord(new GradeRecord(
@@ -110,7 +110,7 @@ class GradeBookTest {
 
     @Test
     void testCanGetIncreasedScholarship() {
-        GradeBook book = new GradeBook(FinancialType.BUDGET);
+        final GradeBook book = new GradeBook(FinancialType.BUDGET);
         Semester semester = new Semester(1);
 
         semester.addRecord(new GradeRecord(

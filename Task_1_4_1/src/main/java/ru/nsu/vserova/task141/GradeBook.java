@@ -6,7 +6,7 @@ import java.util.List;
 /** Основной класс работы с зачетной книжкой. */
 public class GradeBook {
     private final List<Semester> semesters;
-    private FinancialType financialType;
+    private final FinancialType financialType;
     private int currentSemester;
 
     /** Создать пустую зачетную книжку. */
@@ -19,11 +19,6 @@ public class GradeBook {
     /** Добавить новый семестр. */
     public void addSemester(Semester semester) {
         semesters.add(semester);
-    }
-
-    /** Установить основу обучения (бюджет/платка). */
-    public void setFinancialType(FinancialType financialType) {
-        this.financialType = financialType;
     }
 
     /** Установить текущий семестр. */
@@ -94,6 +89,11 @@ public class GradeBook {
         for (Semester semester : semesters) {
             for (GradeRecord record : semester.getRecords()) {
                 Grades grade = record.getGrade();
+
+                if (record.getExamType() == ExamType.TEST || !record.isFinalAssessment()) {
+                    continue;
+                }
+
                 if (record.getExamType() == ExamType.QUALIFYING_WORK
                         && (grade != Grades.EXCELLENT && grade != null)) {
                     return false;
@@ -105,10 +105,6 @@ public class GradeBook {
                         || grade == Grades.SATISFIED
                         || grade == Grades.NOT_PASSED)) {
                     return false;
-                }
-
-                if (record.getExamType() == ExamType.TEST || !record.isFinalAssessment()) {
-                    continue;
                 }
 
                 if (grade == Grades.EXCELLENT) {
